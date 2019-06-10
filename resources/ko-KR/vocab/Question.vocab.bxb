@@ -1,0 +1,13 @@
+vocab(Question){
+ "distance_what"{
+    "몇키로"
+    "몇킬로미터"
+    "몇킬로"    
+  }
+  "money_what"{
+    "얼마"    
+  }
+  "liter_what"{
+    "몇리터"    
+  }
+}

@@ -1,0 +1,59 @@
+action (measureMileage) {
+  // 자동차, 연료(option), [돈, 리터, 거리, 장소]
+  // 
+  type(Calculation)
+  collect {
+    //자동차
+    input (carName) {
+      type (CarName)
+      min (Required) max (One)
+    }
+           
+    //연료
+    input (fuel) {
+      type (Fuel)
+      min (Optional) max (One)
+    }
+    
+    //[돈, 리터, 거리, 장소]
+    input-group (atLeastOne) {
+      requires (OneOrMoreOf)
+      collect {
+        input (money) {          
+          type (Money)
+          max (One)
+        }
+        input (liter) {
+          type (Liter)
+          max (One)
+        }
+        input (distance) {          
+          type (Distance)
+          max (One)
+        }
+        // input (place) {          
+        //   type (Place)
+        //   max (One)
+        // }       
+      }  
+    }      
+    
+    //question (몇 km, 몇 리터, 얼마)
+    input (question) {
+      type (Question)
+      min (Required) max (One)
+    }
+    
+  }
+    
+  output (Result){
+     on-empty{
+      halt{
+        dialog{
+          template ("정호가 소주 3잔 먹는날까지..")
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,7 @@
+enum (Question) {
+  description (가능한 질문들의 나열입니다.)
+  // 참조 (https://bixbydevelopers.com/dev/docs/reference/type/enum)
+  symbol (distance_what)
+  symbol (money_what)
+  symbol (liter_what)
+}
