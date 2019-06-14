@@ -77,12 +77,12 @@ module.exports.function = function measureMileage (carName, fuel, input_value, i
       }
       break;
     case 'distance':
-      //몇 리터 채워야 하는지
+      //기름값이 얼마인지
       if(question == 'money_what'){
         result = distance_moneyWhat(carName, input_value)
       }
 
-      //기름값이 얼마인지
+      //몇 리터 채워야 하는지
       else if(question == 'liter_what'){
         result = distance_literWhat(carName, input_value)
       }
