@@ -1,0 +1,12 @@
+vocab(InputUnit){
+ "won"{
+    "원"    
+  }
+  "liter"{
+    "리터"    
+  }
+  "distance"{
+    "킬로미터"
+    "키로미터"
+  }
+}

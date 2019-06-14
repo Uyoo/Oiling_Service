@@ -1,0 +1,6 @@
+enum (InputUnit) {
+  description (원, 리터, km의 단위를 입력받습니다.)
+  symbol (won)
+  symbol (liter)
+  symbol (distance)
+}

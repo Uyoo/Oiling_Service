@@ -1,0 +1,5 @@
+train (t-qp5zs7mmcs809ll4pst2kgvo7) {
+  utterance ("[g:Result] (아반떼)[v:CarName] (5만)[v:InputValue](원)[v:InputUnit:won]이면 (몇 킬로미터)[v:Question:distance_what] 갈 수 있어")
+  plan (fYo7CgJBEETL7yn8BcZ7CSMDBQVNpZFibZiZlelpvb5roCaDVUlR72GK2e0pprHpNGhqL8b80CubI81DwbpOI8U8c6eB0hLzurWRvJdILOt4m+5eTkkLVn+EswQnFnXj4LSiXcIEAwwxwrhf6Penv7z/r/EC)
+  last-modified (1560319769780)
+}

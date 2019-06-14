@@ -1,7 +1,7 @@
 enum (Question) {
   description (가능한 질문들의 나열입니다.)
   // 참조 (https://bixbydevelopers.com/dev/docs/reference/type/enum)
-  symbol (distance_what)
-  symbol (money_what)
-  symbol (liter_what)
+  symbol (distance_what)  //몇 km야?
+  symbol (money_what)     //얼마야?
+  symbol (liter_what)     //몇 리터 채울 수 있어?
 }

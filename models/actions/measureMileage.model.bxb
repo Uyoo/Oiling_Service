@@ -15,42 +15,53 @@ action (measureMileage) {
       min (Optional) max (One)
     }
     
+    //00(value)원, 리터, km(unit)
+    input (input_value){
+      type (InputValue)
+      min (Required) max (One)
+    }
+    
+    //원, 리터, km의 단위(unit)을 판단
+    input (input_unit) {
+      type (InputUnit)
+      min (Required) max (One)
+    }
+    
     //[돈, 리터, 거리, 장소]
-    input-group (atLeastOne) {
-      requires (OneOrMoreOf)
-      collect {
-        input (money) {          
-          type (Money)
-          max (One)
-        }
-        input (liter) {
-          type (Liter)
-          max (One)
-        }
-        input (distance) {          
-          type (Distance)
-          max (One)
-        }
-        // input (place) {          
-        //   type (Place)
-        //   max (One)
-        // }       
-      }  
-    }      
+    // input-group (atLeastOne) {
+    //   requires (OneOrMoreOf)
+    //   collect {
+    //     input (money) {          
+    //       type (Money)
+    //       max (One)
+    //     }
+    //     input (liter) {
+    //       type (Liter)
+    //       max (One)
+    //     }
+    //     input (distance) {          
+    //       type (Distance)
+    //       max (One)
+    //     }
+    //     // input (place) {          
+    //     //   type (Place)
+    //     //   max (One)
+    //     // }       
+    //   }  
+    // }      
     
     //question (몇 km, 몇 리터, 얼마)
     input (question) {
       type (Question)
       min (Required) max (One)
-    }
-    
+    }    
   }
     
   output (Result){
      on-empty{
       halt{
         dialog{
-          template ("정호가 소주 3잔 먹는날까지..")
+          template ("empty")
         }
       }
     }

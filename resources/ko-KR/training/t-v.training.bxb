@@ -1,0 +1,5 @@
+train (t-vzjzmrm2eh8qamgy91ddz4ls4) {
+  utterance ("[g:Result] (아반떼)[v:CarName] (5만)[v:InputValue](원)[v:InputUnit:won]이면 (몇 리터)[v:Question:liter_what] 채울 수 있어")
+  plan (fYo7CgJBEETL7yn8BcZ7CSMDBQVNpZFibZiZlelpvb5roCaDVUlR72GK2e0pprHpNGhqL8b80CubI81DwbpOI8U8c6eB0hLzurWRvJdILOt4m+5eTkkLVn+EswQnFnXj4LSiXcIEAwwxwrhf6Penv7z/r/EC)
+  last-modified (1560270010130)
+}
