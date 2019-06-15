@@ -3,6 +3,8 @@ var console = require('console')
 // ======= inputUnit이 돈(won)인 경우 =======
 //00원으로 몇 km 갈 수 있어? -> return 거리
 function won_literWhat(carName, input_value){
+  console.log(input_value)
+  
   let oilValue = 1500   //현재(최근) 기름값 데이터
   return 'won_literWhat'
 }
@@ -39,6 +41,7 @@ function liter_moneyWhat(carName, input_value){
 // ======= inputUnit이 거리(distance)인 경우 =======
 //00km면 기름값 얼마야? -> return 기름값
 function distance_moneyWhat(carName, input_value){
+  console.log(input_value)
   return 'distance_moneyWhat'
 }
 

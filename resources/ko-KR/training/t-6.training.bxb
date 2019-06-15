@@ -1,0 +1,5 @@
+train (t-609fx0g6ioyauqd38ezpmz608) {
+  utterance ("[g:Result] (아반떼)[v:CarName]로 (42.35)[v:InputValue](킬로미터)[v:InputUnit:distance]면 기름값 (얼마)[v:Question:money_what]나와")
+  plan (fYo7CgJBEETL7yn8BcZ7CSMDBQVNpZFibZiZlelpvb5roCaDVUlR72GK2e0pprHpNGhqL8b80CubI81DwbpOI8U8c6eB0hLzurWRvJdILOt4m+5eTkkLVn+EswQnFnXj4LSiXcIEAwwxwrhf6Penv7z/r/EC)
+  last-modified (1560571128142)
+}
