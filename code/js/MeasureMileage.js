@@ -1,5 +1,6 @@
 var console = require('console')
 
+
 function getOilApi(){
   const http = require('http')
   let options = {
