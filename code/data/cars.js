@@ -1,5 +1,5 @@
 module.exports =[
-  {//아반떼,쏘나타,그랜저,K5,카니발, K9, 쏘렌토,스포티지,레이,모닝,싼타페
+    {//아반떼,쏘나타,그랜저,K5,카니발, K9, 쏘렌토,스포티지,레이,모닝,싼타페
     carName: "아반떼",
     modelYear: 2019,
     represent :
@@ -94,7 +94,7 @@ module.exports =[
       mileage: 12.0
     },
     fuel: {
-      : [
+      CVVL : [
         {
           engine: 2.0,
           mileage: 12.0
@@ -329,7 +329,7 @@ module.exports =[
         {
           engine: 2.2,
           mileage: 11.3
-        },
+        }, 
         {
           engine: 3.3,
           mileage: 8.2
@@ -690,4 +690,5 @@ module.exports =[
       ]
     }
   }
+
  ]
