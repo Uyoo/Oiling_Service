@@ -1,9 +1,6 @@
 var console = require('console')
 
-// ======= inputUnit이 돈(won)인 경우 =======
-//00원으로 몇 리터 채울 수 있어? -> return 리터
-function won_literWhat(carName, input_value){
-  //1. 기름 api에서 기름값 받아오기(가솔린, 디젤, 부탄(Lpi))
+function getOilApi(){
   const http = require('http')
   let options = {
     format: 'json',
@@ -16,6 +13,15 @@ function won_literWhat(carName, input_value){
   oilValue = oilValue.filter((item, index) => {    
     return index == 0 || index == 3 || index == 4
   })
+  
+  return oilValue
+}
+
+// ======= inputUnit이 돈(won)인 경우 =======
+//00원으로 몇 리터 채울 수 있어? -> return 리터
+function won_literWhat(carName, input_value){
+  //1. 기름 api에서 기름값 받아오기(가솔린, 디젤, 부탄(Lpi))
+  let oilValue = getOilApi()
   
   let won_literWhat = oilValue.map(item => {    
     let calculate = 0
@@ -51,18 +57,7 @@ function won_literWhat(carName, input_value){
 function won_distanceWhat(carName, input_value){     
   //최근 1주의 주간 평균 유가(전국)
   //1. 기름 api에서 기름값 받아오기(가솔린, 디젤, 부탄(Lpi))
-  const http = require('http')
-  let options = {
-    format: 'json',
-    headers: {
-      'accept': 'application/json'
-    },
-  };
-  let response = http.getUrl('http://www.opinet.co.kr/api/avgLastWeek.do?&code=F563190617&out=json', options);
-  let oilValue = response.RESULT.OIL  
-  oilValue = oilValue.filter((item, index) => {    
-    return index == 0 || index == 3 || index == 4
-  })
+  let oilValue = getOilApi()
   
   //2. cars.js에서 연비(mileage) 받아오기(가솔린, 디젤, 부탄(Lpi))
   const carDatas = require('../data/cars.js')
@@ -120,16 +115,11 @@ function won_distanceWhat(carName, input_value){
 //00리터로 몇 km 갈 수 있어? -> return 거리
 //SM5 (기름)30리터면 몇KM 갈수 있어?
 //연비x리터=KM
-function liter_distanceWhat(carName, input_value){  
-//인풋값
-  console.log(input_value)
-  
-  
+function liter_distanceWhat(carName, input_value){    
   //carName과 일치하는 연비 데이터를 불러오기 
   const carDatas = require('../data/cars.js')
   let fuels = []
-  
-  
+    
   //모델과 해당되는 객체만 가져오기
   for(let i=0; i<carDatas.length; i++){
     if(carDatas[i].carName == String(carName)){ 
@@ -144,24 +134,10 @@ function liter_distanceWhat(carName, input_value){
     }    
   }  
   console.log(fuels)
-  
-  
+    
   //최근 전 주의 전국 평균 기름값 불러오기 인덱스 [0]: B034(일반 휘발유)[3]: D047(경유) [4]: K015(부탄, LPI)
-  const http = require('http')
-  let options = {
-    format: 'json',
-    headers: {
-      'accept': 'application/json'
-    },
-  };
-  let response = http.getUrl('http://www.opinet.co.kr/api/avgLastWeek.do?&code=F563190617&out=json', options);
-  let oilValue = response.RESULT.OIL  
-  oilValue = oilValue.filter((item, index) => {    
-    return index == 0 || index == 3 || index == 4
-  })
-  console.log(oilValue)
-  
-  
+  let oilValue = getOilApi()
+    
   //(연비x리터=KM)
   let liter_distanceWhat = []
   let i = 0
@@ -195,8 +171,7 @@ function liter_distanceWhat(carName, input_value){
       
     }    
   
-    liter_distanceWhat.push(object)
-    
+    liter_distanceWhat.push(object)    
   
   }
   console.log(liter_distanceWhat)
@@ -209,14 +184,9 @@ function liter_distanceWhat(carName, input_value){
 //SM5 30리터[B]면 (기름값)얼마야?
 //평균기름값xB
 function liter_moneyWhat(carName, input_value){
-  //인풋값
-  console.log(input_value)
-  
-  
   //carName과 일치하는 연비 데이터를 불러오기 
   const carDatas = require('../data/cars.js')
   let fuels = []
-  
   
   //모델과 해당되는 객체만 가져오기
   for(let i=0; i<carDatas.length; i++){
@@ -232,24 +202,10 @@ function liter_moneyWhat(carName, input_value){
     }    
   }  
   console.log(fuels)
-  
-  
+    
   //최근 전 주의 전국 평균 기름값 불러오기 인덱스 [0]: B034(일반 휘발유)[3]: D047(경유) [4]: K015(부탄, LPI)
-  const http = require('http')
-  let options = {
-    format: 'json',
-    headers: {
-      'accept': 'application/json'
-    },
-  };
-  let response = http.getUrl('http://www.opinet.co.kr/api/avgLastWeek.do?&code=F563190617&out=json', options);
-  let oilValue = response.RESULT.OIL  
-  oilValue = oilValue.filter((item, index) => {    
-    return index == 0 || index == 3 || index == 4
-  })
-  console.log(oilValue)
-  
-  
+  let oilValue = getOilApi()
+    
   //(평균기름값x리터=KM)
   let liter_moneyWhat = []
   let i = 0
@@ -283,9 +239,7 @@ function liter_moneyWhat(carName, input_value){
       
     }    
   
-    liter_moneyWhat.push(object)
-    
-  
+    liter_moneyWhat.push(object)      
   }
   console.log(liter_moneyWhat)
   return ('money:')
@@ -296,14 +250,9 @@ function liter_moneyWhat(carName, input_value){
 //00km면 기름값 얼마야? -> return 기름값
 //SM5 20KM 타면 (기름값)얼마야?  주유비=주행거리÷연비x기름값
 function distance_moneyWhat(carName, input_value){
-  //인풋값
-  console.log(input_value)
-  
-  
   //carName과 일치하는 연비 데이터를 불러오기 
   const carDatas = require('../data/cars.js')
   let fuels = []
-  
   
   //모델과 해당되는 객체만 가져오기
   for(let i=0; i<carDatas.length; i++){
@@ -319,23 +268,9 @@ function distance_moneyWhat(carName, input_value){
     }    
   }  
   console.log(fuels)
-  
-  
+    
   //최근 전 주의 전국 평균 기름값 불러오기 인덱스 [0]: B034(일반 휘발유)[3]: D047(경유) [4]: K015(부탄, LPI)
-  const http = require('http')
-  let options = {
-    format: 'json',
-    headers: {
-      'accept': 'application/json'
-    },
-  };
-  let response = http.getUrl('http://www.opinet.co.kr/api/avgLastWeek.do?&code=F563190617&out=json', options);
-  let oilValue = response.RESULT.OIL  
-  oilValue = oilValue.filter((item, index) => {    
-    return index == 0 || index == 3 || index == 4
-  })
-  console.log(oilValue)
-  
+  let oilValue = getOilApi()  
   
   //(주유비=주행거리÷연비x기름값)
   let distance_moneyWhat = []
@@ -370,27 +305,17 @@ function distance_moneyWhat(carName, input_value){
       
     }    
   
-    distance_moneyWhat.push(object)
-    
-  
+    distance_moneyWhat.push(object)      
   }
   console.log(distance_moneyWhat)
   return ('money:')
 }
 
-
-///////////////////////////SM5 20KM 타면 (기름)몇리터 넣어야되?  리터=KM/연비//////////////////////////////////////////
 //00km면 몇 리터 채워야돼? -> return 리터 아반떼 30킬로면 몇리터  (리터=KM/연비)
-function distance_literWhat(carName, input_value){
-  
-  //인풋값
-  console.log(input_value)
-  
-  
+function distance_literWhat(carName, input_value){    
   //carName과 일치하는 연비 데이터를 불러오기 
   const carDatas = require('../data/cars.js')
-  let fuels = []
-  
+  let fuels = []  
   
   //모델과 해당되는 객체만 가져오기
   for(let i=0; i<carDatas.length; i++){
@@ -409,20 +334,7 @@ function distance_literWhat(carName, input_value){
   
   
   //최근 전 주의 전국 평균 기름값 불러오기 인덱스 [0]: B034(일반 휘발유)[3]: D047(경유) [4]: K015(부탄, LPI)
-  const http = require('http')
-  let options = {
-    format: 'json',
-    headers: {
-      'accept': 'application/json'
-    },
-  };
-  let response = http.getUrl('http://www.opinet.co.kr/api/avgLastWeek.do?&code=F563190617&out=json', options);
-  let oilValue = response.RESULT.OIL  
-  oilValue = oilValue.filter((item, index) => {    
-    return index == 0 || index == 3 || index == 4
-  })
-  console.log(oilValue)
-  
+  let oilValue = getOilApi()  
   
   //(리터=KM/연비)
   let distance_literWhat = []
@@ -457,9 +369,7 @@ function distance_literWhat(carName, input_value){
       
     }    
   
-    distance_literWhat.push(object)
-    
-  
+    distance_literWhat.push(object)    
   }
   console.log(distance_literWhat)
   return ('liter:')
