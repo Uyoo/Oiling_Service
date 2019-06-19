@@ -1,0 +1,5 @@
+train (t-oh1wsqy8iu3asbw5gv37vlbw9) {
+  utterance ("[g:Result] (아반떼)[v:CarName]로 (서현역)[v:Start_Place](에서)[v:InputUnit:place] (불국사)[v:End_Place](까지)[v:End_Place_Unit] 기름값 (얼마)[v:Question:money_what]야?")
+  plan (dY7LCsJADEWvbz/CB4Lr/oS4cKH4wHUJNbSBmanMZPT3rSJiYZqsLueQXEwxq54UxGa1GHFlHtg/pODszCEaxTpNLVOInvdimErGPG1tyB/IMpZpvHW3/Gio4K4vPyG/OtGuMzt3j/oRFmnhFDmo1A6rNL8oef02maCHPgYYYoRxk9Dk/23Pm7fsFw==)
+  last-modified (1560934853637)
+}
