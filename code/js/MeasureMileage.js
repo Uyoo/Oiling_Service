@@ -20,7 +20,7 @@ function getOilApi(){
 // ======= inputUnit이 돈(won)인 경우 =======
 //00원으로 몇 리터 채울 수 있어? -> return 리터
 function won_literWhat(carName, input_value){
-  //1. 기름 api에서 기름값 받아오기(가솔린, 디젤, 부탄(Lpi))
+  //기름 api에서 기름값 받아오기(가솔린, 디젤, 부탄(Lpi))
   let oilValue = getOilApi()
   
   let won_literWhat = oilValue.map(item => {    
@@ -56,10 +56,10 @@ function won_literWhat(carName, input_value){
 //00원으로 몇 km 갈 수 있어? -> return 거리
 function won_distanceWhat(carName, input_value){     
   //최근 1주의 주간 평균 유가(전국)
-  //1. 기름 api에서 기름값 받아오기(가솔린, 디젤, 부탄(Lpi))
+  //기름 api에서 기름값 받아오기(가솔린, 디젤, 부탄(Lpi))
   let oilValue = getOilApi()
   
-  //2. cars.js에서 연비(mileage) 받아오기(가솔린, 디젤, 부탄(Lpi))
+  //cars.js에서 연비(mileage) 받아오기(가솔린, 디젤, 부탄(Lpi))
   const carDatas = require('../data/cars.js')
   let fuels = []
   //모델과 해당되는 객체만 가져오기
@@ -76,7 +76,7 @@ function won_distanceWhat(carName, input_value){
     }    
   }  
   
-  //주행거리=주유비x연비÷기름값
+  //주행거리 = 주유비 x 연비 ÷ 기름값
   let won_distanceWhat = []
   let i = 0
   for(let key in fuels){
@@ -113,8 +113,7 @@ function won_distanceWhat(carName, input_value){
 
 // ======= inputUnit이 리터(liter)인 경우 =======
 //00리터로 몇 km 갈 수 있어? -> return 거리
-//SM5 (기름)30리터면 몇KM 갈수 있어?
-//연비x리터=KM
+//연비 x 리터 = KM
 function liter_distanceWhat(carName, input_value){    
   //carName과 일치하는 연비 데이터를 불러오기 
   const carDatas = require('../data/cars.js')
@@ -141,8 +140,7 @@ function liter_distanceWhat(carName, input_value){
   //(연비x리터=KM)
   let liter_distanceWhat = []
   let i = 0
-  for(let key in fuels){
-    
+  for(let key in fuels){    
     let calculate = 0
     let object = {
       fuel: '',
@@ -167,20 +165,18 @@ function liter_distanceWhat(carName, input_value){
       calculate = input_value * fuels[key][0].mileage
       object.fuel = 'LPi'
       object.distance = calculate
-      i += 1
-      
+      i += 1      
     }    
   
-    liter_distanceWhat.push(object)    
-  
+    liter_distanceWhat.push(object)      
   }
   console.log(liter_distanceWhat)
+  
   return ('KM:')
 }
 
 //00리터면 기름값 얼마야? -> return 기름값
-//SM5 30리터[B]면 (기름값)얼마야?
-//평균기름값xB
+//평균기름값 x B
 function liter_moneyWhat(carName, input_value){
   //carName과 일치하는 연비 데이터를 불러오기 
   const carDatas = require('../data/cars.js')
@@ -204,7 +200,7 @@ function liter_moneyWhat(carName, input_value){
   //최근 전 주의 전국 평균 기름값 불러오기 인덱스 [0]: B034(일반 휘발유)[3]: D047(경유) [4]: K015(부탄, LPI)
   let oilValue = getOilApi()
     
-  //(평균기름값x리터=KM)
+  //평균기름값x리터=KM
   let liter_moneyWhat = []
   let i = 0
   for(let key in fuels){
@@ -246,7 +242,6 @@ function liter_moneyWhat(carName, input_value){
 
 // ======= inputUnit이 거리(distance)인 경우 =======
 //00km면 기름값 얼마야? -> return 기름값
-//SM5 20KM 타면 (기름값)얼마야?  주유비=주행거리÷연비x기름값
 function distance_moneyWhat(carName, input_value){
   //carName과 일치하는 연비 데이터를 불러오기 
   const carDatas = require('../data/cars.js')
@@ -270,7 +265,7 @@ function distance_moneyWhat(carName, input_value){
   //최근 전 주의 전국 평균 기름값 불러오기 인덱스 [0]: B034(일반 휘발유)[3]: D047(경유) [4]: K015(부탄, LPI)
   let oilValue = getOilApi()  
   
-  //(주유비=주행거리÷연비x기름값)
+  //주유비 = 주행거리 ÷ 연비 x 기름값
   let distance_moneyWhat = []
   let i = 0
   for(let key in fuels){
@@ -329,8 +324,7 @@ function distance_literWhat(carName, input_value){
     }    
   }  
   console.log(fuels)
-  
-  
+    
   //최근 전 주의 전국 평균 기름값 불러오기 인덱스 [0]: B034(일반 휘발유)[3]: D047(경유) [4]: K015(부탄, LPI)
   let oilValue = getOilApi()  
   
@@ -373,6 +367,7 @@ function distance_literWhat(carName, input_value){
   return ('liter:')
 }
 
+//장소에 대한 위도, 경도 반환
 function getLatLon(place){
   var lon;
   var lat;
@@ -402,6 +397,7 @@ function getLatLon(place){
   return [lat, lon];
 }
 
+//출발지와 도착지 사이의 거리 반환
 function getDistance(start_place, end_place){
   var place_start = String(start_place);
   var place_end = String(end_place);
@@ -440,6 +436,8 @@ function getDistance(start_place, end_place){
   let distance = response2.features[0].properties.totalDistance;
   return distance;
 }
+
+
 
 module.exports.function = function measureMileage (carName, fuel, input_value, input_unit, question, start_place, end_place, end_place_unit) {
   var console = require('console')  
