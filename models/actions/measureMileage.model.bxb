@@ -55,6 +55,14 @@ action (measureMileage) {
       type (Question)
       min (Required) max (One)
     }    
+    input (start_place) {
+      type (Start_Place)
+      min (Optional) max (One)
+    }
+    input (end_place) {
+      type (End_Place)
+      min (Optional) max (One)
+    }
   }
     
   output (Result){

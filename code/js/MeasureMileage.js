@@ -1,6 +1,5 @@
 var console = require('console')
 
-
 function getOilApi(){
   const http = require('http')
   let options = {
@@ -177,8 +176,6 @@ function liter_distanceWhat(carName, input_value){
   }
   console.log(liter_distanceWhat)
   return ('KM:')
-  
- 
 }
 
 //00리터면 기름값 얼마야? -> return 기름값
@@ -376,10 +373,82 @@ function distance_literWhat(carName, input_value){
   return ('liter:')
 }
 
+function getLatLon(place){
+  var lon;
+  var lat;
+  
+  const http = require('http')
+  let options = {
+    format: 'json',
+    headers: {
+      //'accept': 'application/json',
+      'appKey': '1edaa571-09d8-4b11-b060-7170568f2ec4'
+    },
+    query: {
+      'searchKeyword': place,//검색 키워드
+      'searchType': 'all',
+      'searchtypCd': 'A',
+      'radius': 0,//검색반경
+      'multiPoint': 'N',
+      'count': 1//페이지당 출력되는 개수를 지정
+    }
+  };
+  let response = http.getUrl('https://api2.sktelecom.com/tmap/pois?version=1&format=json&callback=result', options);
+  
+  lat = response.searchPoiInfo.pois.poi[0].noorLat;
+  lon = response.searchPoiInfo.pois.poi[0].noorLon;
+  
+  console.log(response.searchPoiInfo.pois.poi[0]);
+  return [lat, lon];
+}
 
-module.exports.function = function measureMileage (carName, fuel, input_value, input_unit, question) {
+function getDistance(start_place, end_place, carName, question){
+  var place_start = String(start_place);
+  var place_destination = String(end_place);
+
+  var latlon_s;
+  var latlon_e;
+
+  //좌표 구하기
+  latlon_s = getLatLon(place_start)
+  latlon_e = getLatLon(place_end)
+  
+  var headers = {};
+  headers["appKey"] = "1edaa571-09d8-4b11-b060-7170568f2ec4";//실행을 위한 키 입니다. 발급받으신 AppKey(서버키)를 입력하세요.
+  const http = require('http');
+  let options = {
+    format: 'json',
+    query: {
+      //passAsJson : true,
+      startX: latlon_s[1],
+      startY: latlon_s[0],
+      //목적지 위경도 좌표입니다.
+      endX: latlon_e[1],
+      endY: latlon_e[0],
+      //출발지, 경유지, 목적지 좌표계 유형을 지정합니다.
+      reqCoordType: "WGS84GEO",
+      resCoordType: "EPSG3857",
+      //각도입니다.
+      angle: "172",
+      //경로 탐색 옵션 입니다.
+      searchOption: 0,
+      //교통정보 포함 옵션입니다.
+      trafficInfo: "N"
+    }
+  };
+  let response2 = http.postUrl('https://api2.sktelecom.com/tmap/routes?version=1&format=json', headers, options);
+  let distance = response2.features[0].properties.totalDistance;
+  return console.log(distance);
+}
+
+module.exports.function = function measureMileage (carName, fuel, input_value, input_unit, question, start_place, end_place) {
   var console = require('console')  
-  let result = ''       
+  let result = ''
+  
+  if(!start_place){
+    result = getDistance(start_place, end_place, carName, question);
+  }  
+  
   
   let input_unit = String(input_unit)
   switch (input_unit) {    
@@ -419,6 +488,7 @@ module.exports.function = function measureMileage (carName, fuel, input_value, i
       break;
       
     default:
+      
       console.log('Sorry')
   }
     
