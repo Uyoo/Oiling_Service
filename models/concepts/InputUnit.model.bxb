@@ -3,4 +3,5 @@ enum (InputUnit) {
   symbol (won)
   symbol (liter)
   symbol (distance)
+  symbol (place)
 }

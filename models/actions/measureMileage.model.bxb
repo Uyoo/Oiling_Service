@@ -18,10 +18,10 @@ action (measureMileage) {
     //00(value)원, 리터, km(unit)
     input (input_value){
       type (InputValue)
-      min (Required) max (One)
+      min (Optional) max (One)
     }
     
-    //원, 리터, km의 단위(unit)을 판단
+    //원, 리터, km의 단위(unit), 장소를 판단
     input (input_unit) {
       type (InputUnit)
       min (Required) max (One)
@@ -61,6 +61,10 @@ action (measureMileage) {
     }
     input (end_place) {
       type (End_Place)
+      min (Optional) max (One)
+    }
+    input (end_place_unit) {
+      type (End_Place_Unit)
       min (Optional) max (One)
     }
   }

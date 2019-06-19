@@ -402,9 +402,9 @@ function getLatLon(place){
   return [lat, lon];
 }
 
-function getDistance(start_place, end_place, carName, question){
+function getDistance(start_place, end_place){
   var place_start = String(start_place);
-  var place_destination = String(end_place);
+  var place_end = String(end_place);
 
   var latlon_s;
   var latlon_e;
@@ -438,17 +438,12 @@ function getDistance(start_place, end_place, carName, question){
   };
   let response2 = http.postUrl('https://api2.sktelecom.com/tmap/routes?version=1&format=json', headers, options);
   let distance = response2.features[0].properties.totalDistance;
-  return console.log(distance);
+  return distance;
 }
 
-module.exports.function = function measureMileage (carName, fuel, input_value, input_unit, question, start_place, end_place) {
+module.exports.function = function measureMileage (carName, fuel, input_value, input_unit, question, start_place, end_place, end_place_unit) {
   var console = require('console')  
   let result = ''
-  
-  if(!start_place){
-    result = getDistance(start_place, end_place, carName, question);
-  }  
-  
   
   let input_unit = String(input_unit)
   switch (input_unit) {    
@@ -485,6 +480,22 @@ module.exports.function = function measureMileage (carName, fuel, input_value, i
       else if(question == 'liter_what'){
         result = distance_literWhat(carName, input_value)
       }
+      break;
+      
+    case 'place':
+      var distance_value
+      console.log(start_place);
+      console.log(end_place);
+      distance_value = getDistance(start_place, end_place);
+      distance_value = Math.floor(distance_value / 1000);
+      //기름값이 얼마인지      
+      if(question == 'money_what'){
+        result = distance_moneyWhat(carName, distance_value)
+      }
+      //몇 리터 채워야 하는지
+      else if(question == 'liter_what'){
+        result = distance_literWhat(carName, distance_value)
+      }      
       break;
       
     default:
