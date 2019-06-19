@@ -87,19 +87,19 @@ function won_distanceWhat(carName, input_value){
     }
     if(key == 'gasoline' && oilValue[i].PRODCD == 'B027'){      
       calculate = input_value * fuels[key][0].mileage / oilValue[i].PRICE     
-      object.fuel = 'gasoline'
+      object.fuel = key
       object.distance = calculate
       i += 1
       
     } else if(key == 'diesel' && oilValue[i].PRODCD == 'D047'){      
       calculate = input_value * fuels[key][0].mileage / oilValue[i].PRICE
-      object.fuel = 'diesel'
+      object.fuel = key
       object.distance = calculate
       i += 1
       
     } else if(key == 'LPi' && oilValue[i].PRODCD == 'K015'){      
       calculate = input_value * fuels[key][0].mileage / oilValue[i].PRICE  
-      object.fuel = 'LPi'
+      object.fuel = key
       object.distance = calculate
       i += 1
     }    
@@ -149,21 +149,21 @@ function liter_distanceWhat(carName, input_value){
 
     if(key == 'gasoline' && oilValue[i].PRODCD == 'B027'){
       calculate = input_value * fuels[key][0].mileage
-      object.fuel = 'gasoline'
+      object.fuel = key
       object.distance = calculate
       i += 1
       
     } else if(key == 'diesel' && oilValue[i].PRODCD == 'D047'){
       
       calculate = input_value * fuels[key][0].mileage 
-      object.fuel = 'diesel'
+      object.fuel = key
       object.distance = calculate
       i += 1
       
     } else if(key == 'LPi' && oilValue[i].PRODCD == 'K015'){
       
       calculate = input_value * fuels[key][0].mileage
-      object.fuel = 'LPi'
+      object.fuel = key
       object.distance = calculate
       i += 1      
     }    
@@ -213,24 +213,21 @@ function liter_moneyWhat(carName, input_value){
 
     if(key == 'gasoline' && oilValue[i].PRODCD == 'B027'){
       calculate = input_value * oilValue[i].PRICE
-      object.fuel = 'gasoline'
+      object.fuel = key
       object.money = calculate
       i += 1
       
-    } else if(key == 'diesel' && oilValue[i].PRODCD == 'D047'){
-      
+    } else if(key == 'diesel' && oilValue[i].PRODCD == 'D047'){      
       calculate = input_value * oilValue[i].PRICE
-      object.fuel = 'diesel'
+      object.fuel = key
       object.money = calculate
       i += 1
       
-    } else if(key == 'LPi' && oilValue[i].PRODCD == 'K015'){
-      
+    } else if(key == 'LPi' && oilValue[i].PRODCD == 'K015'){      
       calculate = input_value * oilValue[i].PRICE
-      object.fuel = 'LPi'
+      object.fuel = key
       object.money = calculate
-      i += 1
-      
+      i += 1      
     }    
   
     liter_moneyWhat.push(object)      
@@ -278,21 +275,21 @@ function distance_moneyWhat(carName, input_value){
 
     if(key == 'gasoline' && oilValue[i].PRODCD == 'B027'){
       calculate = input_value / fuels[key][0].mileage * oilValue[i].PRICE
-      object.fuel = 'gasoline'
+      object.fuel = key
       object.money = calculate
       i += 1
       
     } else if(key == 'diesel' && oilValue[i].PRODCD == 'D047'){
       
       calculate = input_value / fuels[key][0].mileage * oilValue[i].PRICE
-      object.fuel = 'diesel'
+      object.fuel = key
       object.money = calculate
       i += 1
       
     } else if(key == 'LPi' && oilValue[i].PRODCD == 'K015'){
       
       calculate = input_value / fuels[key][0].mileage * oilValue[i].PRICE
-      object.fuel = 'LPi'
+      object.fuel = key
       object.money = calculate
       i += 1
       
@@ -341,24 +338,23 @@ function distance_literWhat(carName, input_value){
 
     if(key == 'gasoline' && oilValue[i].PRODCD == 'B027'){
       calculate = input_value / fuels[key][0].mileage
-      object.fuel = 'gasoline'
+      object.fuel = key
       object.liter = calculate
       i += 1
       
     } else if(key == 'diesel' && oilValue[i].PRODCD == 'D047'){
       
       calculate = input_value / fuels[key][0].mileage
-      object.fuel = 'diesel'
+      object.fuel = key
       object.liter = calculate
       i += 1
       
     } else if(key == 'LPi' && oilValue[i].PRODCD == 'K015'){
       
       calculate = input_value / fuels[key][0].mileage
-      object.fuel = 'LPi'
+      object.fuel = key
       object.liter = calculate
-      i += 1
-      
+      i += 1      
     }    
   
     distance_literWhat.push(object)    
@@ -436,7 +432,6 @@ function getDistance(start_place, end_place){
   let distance = response2.features[0].properties.totalDistance;
   return distance;
 }
-
 
 
 module.exports.function = function measureMileage (carName, fuel, input_value, input_unit, question, start_place, end_place, end_place_unit) {
