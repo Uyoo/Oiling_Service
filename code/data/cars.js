@@ -1,11 +1,11 @@
 module.exports =[
-    {//아반떼,쏘나타,그랜저,K5,카니발, K9, 쏘렌토,스포티지,레이,모닝,싼타페
+  {//아반떼,쏘나타,그랜저,K5,카니발, K9, 쏘렌토,스포티지,레이,모닝,싼타페
     carName: "아반떼",
     modelYear: 2019,
     represent :
     {
-      engine: 1.6,
-      mileage: 14.0
+      fuel : 'diesel',
+      engine : 1.6
     },
     fuel: {
       gasoline: [
@@ -34,8 +34,8 @@ module.exports =[
     modelYear: 2018,
     represent :
     {
-      engine: 1.6,
-      mileage: 14.0
+      fuel : 'diesel',
+      engine : 1.6
     },
     fuel: {
       gasoline: [
@@ -59,14 +59,67 @@ module.exports =[
       ]
     }
   },
-  
+  {
+    carName: "아반떼",
+    modelYear: 2017,
+    represent :
+    {
+      fuel : 'diesel',
+      engine : 1.6
+    },
+    fuel: {
+      gasoline: [
+        {
+          engine: 1.6,
+          mileage: 13.1
+        }
+
+      ],
+      diesel: [
+        {
+          engine: 1.6,
+          mileage: 17.9
+        }
+      ],
+      LPi: [
+        {
+          engine: 1.6,
+          mileage: 10.6
+        }
+      ]
+    }
+  },
+  {
+    carName: "쏘나타",
+    modelYear: 2019,
+    represent :
+    {
+      fuel : 'gasoline',
+      engine : 2.0
+    },
+    fuel: {
+      gasoline: [
+        {
+          engine: 2.0,
+          mileage: 13.0
+        }
+
+      ],
+      LPi: [
+        {
+          engine: 2.0,
+          mileage: 9.8
+        }
+      ]
+    }
+  },
   {
     carName: "쏘나타",
     modelYear: 2018,
     represent :
     {
-      engine: 2.0,
-      mileage: 11.6
+      fuel : 'gasoline',
+      engine : 2.0
     },
     fuel: {
       gasoline: [
@@ -83,55 +136,15 @@ module.exports =[
       ]
     }
   },
-  
-    //정확하지 않음 다시 해보기
-  {
-    carName: "쏘나타",
-    modelYear: 2017,
-    represent :
-    {
-      engine: 2.0,
-      mileage: 12.0
-    },
-    fuel: {
-      CVVL : [
-        {
-          engine: 2.0,
-          mileage: 12.0
-        }
-      ],
 
-      GDiT: [
-        {
-          engine: 1.6,
-          mileage: 12.7
-        },
-        {
-          engine: 2.0,
-          mileage: 10.8
-        }
-      ],
-      eVGT: [
-        {
-          engine: 1.7,
-          mileage: 16.5
-        }
-      ],
-      LPi: [
-        {
-          engine: 2.0,
-          mileage: 9.6
-        }
-      ]
-    }
-  },
+
   {
     carName: "그랜저",
     modelYear: 2019,
     represent :
     {
-      engine: 2.4,
-      mileage: 11.0
+      fuel : 'gasoline',
+      engine : 2.4
     },
     fuel: {
       gasoline: [
@@ -159,11 +172,11 @@ module.exports =[
   },
   {
     carName: "그랜저",
-    modelYear: 2018, 
+    modelYear: 2018,
     represent :
     {
-      engine: 2.4,
-      mileage: 11.0
+      fuel : 'gasoline',
+      engine : 2.4
     },
     fuel: {
       gasoline: [
@@ -201,8 +214,8 @@ module.exports =[
     modelYear: 2017,
     represent :
     {
-      engine: 2.4,
-      mileage: 11.0
+      fuel : 'gasoline',
+      engine : 2.4
     },
     fuel: {
       gasoline: [
@@ -240,8 +253,8 @@ module.exports =[
     modelYear: 2020,
     represent :
     {
-      engine: 2.0,
-      mileage: 11.6
+      fuel : 'diesel',
+      engine : 1.7
     },
     fuel: {
       gasoline: [
@@ -271,8 +284,8 @@ module.exports =[
     modelYear: 2018,
     represent :
     {
-      engine: 2.0,
-      mileage: 11.6
+      fuel : 'diesel',
+      engine : 1.7
     },
     fuel: {
       gasoline: [
@@ -281,7 +294,7 @@ module.exports =[
           mileage: 11.6
         }
       ],
-      
+
       LPi: [
         {
           engine: 2.0,
@@ -303,8 +316,8 @@ module.exports =[
     modelYear: 2017,
     represent :
     {
-      engine: 2.0,
-      mileage: 11.6
+      fuel : 'diesel',
+      engine : 1.7
     },
     fuel: {
       diesel: [
@@ -317,19 +330,19 @@ module.exports =[
   },
 
   {//이건 어떻게 할지
-    carName: "더뉴 카니발",
+    carName: "더뉴카니발",
     modelYear: 2018,
     represent :
     {
-      engine: 2.2,
-      mileage: 11.3
+      fuel : 'gasoline',
+      engine : 2.2
     },
     fuel: {
       gasoline: [
         {
           engine: 2.2,
           mileage: 11.3
-        }, 
+        },
         {
           engine: 3.3,
           mileage: 8.2
@@ -338,14 +351,14 @@ module.exports =[
     }
   },
 
- 
+
   {
     carName: "카니발",
     modelYear: 2018,
     represent :
     {
-      engine: 2.2,
-      mileage: 10.9
+      fuel : 'gasoline',
+      engine : 2.2
     },
     fuel: {
       gasoline: [
@@ -365,8 +378,8 @@ module.exports =[
     modelYear: 2017,
     represent :
     {
-      engine: 2.2,
-      mileage: 11.2
+      fuel : 'gasoline',
+      engine : 2.2
     },
     fuel: {
       gasoline: [
@@ -386,8 +399,8 @@ module.exports =[
     modelYear: 2020,
     represent :
     {
-      engine: 3.8,
-      mileage: 8.8
+      fuel : 'gasoline',
+      engine : 3.8
     },
     fuel: {
       gasoline: [
@@ -408,8 +421,8 @@ module.exports =[
     modelYear: 2017,
     represent :
     {
-      engine: 3.3,
-      mileage: 8.6
+      fuel : 'gasoline',
+      engine : 3.3
     },
     fuel: {
       gasoline: [
@@ -433,8 +446,8 @@ module.exports =[
     modelYear: 2020,
     represent :
     {
-      engine: 2.0,
-      mileage: 9.4
+      fuel : 'diesel',
+      engine : 2.0
     },
     fuel: {
       gasoline: [
@@ -466,8 +479,8 @@ module.exports =[
     modelYear: 2019,
     represent :
     {
-      engine: 2.0,
-      mileage: 10.5
+      fuel : 'diesel',
+      engine : 1.6
     },
     fuel: {
       gasoline: [
@@ -493,8 +506,8 @@ module.exports =[
     modelYear: 2018,
     represent :
     {
-      engine: 2.0,
-      mileage: 10.3
+      fuel : 'diesel',
+      engine : 1.7
     },
     fuel: {
       gasoline: [
@@ -520,8 +533,8 @@ module.exports =[
     modelYear: 2017,
     represent :
     {
-      engine: 2.0,
-      mileage: 10.3
+      fuel : 'diesel',
+      engine : 1.7
     },
     fuel: {
       gasoline: [
@@ -547,8 +560,8 @@ module.exports =[
     modelYear: 2018,
     represent :
     {
-      engine: 1.0,
-      mileage: 12.7
+      fuel : 'LPi',
+      engine : 1.0
     },
     fuel: {
       gasoline: [
@@ -570,8 +583,8 @@ module.exports =[
     modelYear: 2019,
     represent :
     {
-      engine: 1.0,
-      mileage: 14.7
+      fuel : 'LPi',
+      engine : 1.0
     },
     fuel: {
       gasoline: [
@@ -588,17 +601,17 @@ module.exports =[
       ]
     }
   },
-  
+
   {
     carName: "싼타페",
     modelYear: 2019,
     represent :
     {
-      engine: 2.0,
-      mileage: 9.5
+      fuel : 'diesel',
+      engine : 2.0
     },
     fuel: {
-      gasolineT: [
+      gasoline: [
         {
           engine: 2.0,
           mileage: 9.5
@@ -622,11 +635,11 @@ module.exports =[
     modelYear: 2018,
     represent :
     {
-      engine: 2.0,
-      mileage: 9.0
+      fuel : 'diesel',
+      engine : 2.0
     },
     fuel: {
-      gasolineT: [
+      gasoline: [
         {
           engine: 2.0,
           mileage: 9.0
@@ -650,8 +663,8 @@ module.exports =[
     modelYear: 2017,
     represent :
     {
-      engine: 2.0,
-      mileage: 9.0
+      fuel : 'diesel',
+      engine : 2.0
     },
     fuel: {
       diesel: [
@@ -666,14 +679,14 @@ module.exports =[
       ]
     }
   },
- 
+
   {
     carName: "엑센트",
     modelYear: 2017,
     represent :
     {
-      engine: 1.4,
-      mileage: 13.4
+      fuel : 'diesel',
+      engine : 1.6
     },
     fuel: {
       gasoline: [
@@ -691,4 +704,4 @@ module.exports =[
     }
   }
 
- ]
+]
