@@ -1,4 +1,4 @@
-var console = require('console')
+let console = require('console')
 
 function getOilApi(){
   const http = require('http')
@@ -25,7 +25,7 @@ function won_literWhat(carName, input_value){
   
   let won_literWhat = oilValue.map(item => {    
     let calculate = 0
-    let object = {
+    let object = {      
       fuel: '',
       liter: ''
     }
@@ -360,13 +360,14 @@ function distance_literWhat(carName, input_value){
     distance_literWhat.push(object)    
   }
   console.log(distance_literWhat)
+  
   return ('liter:')
 }
 
 //장소에 대한 위도, 경도 반환
 function getLatLon(place){
-  var lon;
-  var lat;
+  let lon;
+  let lat;
   
   const http = require('http')
   let options = {
@@ -386,26 +387,17 @@ function getLatLon(place){
   };
   let response = http.getUrl('https://api2.sktelecom.com/tmap/pois?version=1&format=json&callback=result', options);
   
-  lat = response.searchPoiInfo.pois.poi[0].noorLat;
-  lon = response.searchPoiInfo.pois.poi[0].noorLon;
+  lat = response.searchPoiInfo.pois.poi[0].noorLat
+  lon = response.searchPoiInfo.pois.poi[0].noorLon
   
-  console.log(response.searchPoiInfo.pois.poi[0]);
+  console.log(response.searchPoiInfo.pois.poi[0])
+  
   return [lat, lon];
 }
 
 //출발지와 도착지 사이의 거리 반환
-function getDistance(start_place, end_place){
-  var place_start = String(start_place);
-  var place_end = String(end_place);
-
-  var latlon_s;
-  var latlon_e;
-
-  //좌표 구하기
-  latlon_s = getLatLon(place_start)
-  latlon_e = getLatLon(place_end)
-  
-  var headers = {};
+function getDistance(latlon_s, latlon_e){  
+  var headers = {}
   headers["appKey"] = "1edaa571-09d8-4b11-b060-7170568f2ec4";//실행을 위한 키 입니다. 발급받으신 AppKey(서버키)를 입력하세요.
   const http = require('http');
   let options = {
@@ -414,85 +406,133 @@ function getDistance(start_place, end_place){
       //passAsJson : true,
       startX: latlon_s[1],
       startY: latlon_s[0],
+      
       //목적지 위경도 좌표입니다.
       endX: latlon_e[1],
       endY: latlon_e[0],
+      
       //출발지, 경유지, 목적지 좌표계 유형을 지정합니다.
       reqCoordType: "WGS84GEO",
       resCoordType: "EPSG3857",
+      
       //각도입니다.
       angle: "172",
+      
       //경로 탐색 옵션 입니다.
       searchOption: 0,
+      
       //교통정보 포함 옵션입니다.
       trafficInfo: "N"
     }
   };
-  let response2 = http.postUrl('https://api2.sktelecom.com/tmap/routes?version=1&format=json', headers, options);
-  let distance = response2.features[0].properties.totalDistance;
+  let response = http.postUrl('https://api2.sktelecom.com/tmap/routes?version=1&format=json', headers, options);
+  let distance = response.features[0].properties.totalDistance;
+  
   return distance;
 }
 
 
-module.exports.function = function measureMileage (carName, fuel, input_value, input_unit, question, start_place, end_place, end_place_unit) {
-  var console = require('console')  
+module.exports.function = function measureMileage (carName, fuel, inputValue, inputUnit, question, 
+                                                    startPlace, startPlaceMyPos, endPlace, endPlaceUnit) {
+  let console = require('console')  
   let result = ''
   
-  let input_unit = String(input_unit)
+  let input_unit = String(inputUnit)
   switch (input_unit) {    
     case 'won':
       //몇 km로 갈 수 있는지      
       if(question == 'distance_what'){  
-        result = won_distanceWhat(carName, input_value)
+        result = won_distanceWhat(carName, inputValue)
       }
 
       //몇 리터를 넣을 수 있는지
       else if(question == 'liter_what'){        
-        result = won_literWhat(carName, input_value)
+        result = won_literWhat(carName, inputValue)
       }
       break;
       
     case 'liter':
       //몇 km로 갈 수 있는지
       if(question == 'distance_what'){
-        result = liter_distanceWhat(carName, input_value)
+        result = liter_distanceWhat(carName, inputValue)
       }
 
       //기름값이 얼마인지
       else if(question == 'money_what'){
-        result = liter_moneyWhat(carName, input_value)        
+        result = liter_moneyWhat(carName, inputValue)        
       }
       break;
     case 'distance':
       //기름값이 얼마인지
       if(question == 'money_what'){
-        result = distance_moneyWhat(carName, input_value)
+        result = distance_moneyWhat(carName, inputValue)
       }
 
       //몇 리터 채워야 하는지
       else if(question == 'liter_what'){
-        result = distance_literWhat(carName, input_value)
+        result = distance_literWhat(carName, inputValue)
       }
       break;
       
     case 'place':
-      var distance_value
-      console.log(start_place);
-      console.log(end_place);
-      distance_value = getDistance(start_place, end_place);
-      distance_value = Math.floor(distance_value / 1000);
-      //기름값이 얼마인지      
-      if(question == 'money_what'){
-        result = distance_moneyWhat(carName, distance_value)
+      let distance_value 
+      let latlon_s
+      let latlon_e
+      
+      //목적지 및 목저지유닛이 존재하는 경우
+      if(endPlace != undefined && endPlaceUnit != undefined){      
+        
+        //출발지 키워드가 존재하는 경우
+        if(startPlace != undefined){
+          console.log('start_place: ', startPlace)
+          console.log('end_place: ', endPlace)
+          
+          //위도 경도 구하기
+          latlon_s = getLatLon(startPlace)
+          latlon_e = getLatLon(endPlace)
+          distance_value = getDistance(latlon_s, latlon_e)
+          distance_value = Math.floor(distance_value / 1000)
+          console.log(distance_value)
+          
+          //기름값이 얼마인지      
+          if(question == 'money_what'){
+            result = distance_moneyWhat(carName, distance_value)
+          }
+          //몇 리터 채워야 하는지
+          else if(question == 'liter_what'){
+            result = distance_literWhat(carName, distance_value)
+          }      
+          
+        } 
+        
+        //출발지 키워드가 존재하지 않은 경우 ex.여기서, x
+        else{          
+          //위도 경도 구하기
+          latlon_s = [startPlaceMyPos.latitude, startPlaceMyPos.longitude] 
+          latlon_e = getLatLon(endPlace)          
+          distance_value = getDistance(latlon_s, latlon_e)
+          distance_value = Math.floor(distance_value / 1000)
+          
+          console.log(distance_value)
+          
+          //기름값이 얼마인지      
+          if(question == 'money_what'){
+            result = distance_moneyWhat(carName, distance_value)
+          }
+          //몇 리터 채워야 하는지
+          else if(question == 'liter_what'){
+            result = distance_literWhat(carName, distance_value)
+          }      
+        } 
       }
-      //몇 리터 채워야 하는지
-      else if(question == 'liter_what'){
-        result = distance_literWhat(carName, distance_value)
-      }      
+      
+      else {
+        result = '목적지를 입력해주세요'
+      }
+      
       break;
       
-    default:
-      
+    default:      
       console.log('Sorry')
   }
     

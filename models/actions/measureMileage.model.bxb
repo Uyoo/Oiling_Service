@@ -16,57 +16,62 @@ action (measureMileage) {
     }
     
     //00(value)원, 리터, km(unit)
-    input (input_value){
+    input (inputValue){
       type (InputValue)
       min (Optional) max (One)
     }
     
-    //원, 리터, km의 단위(unit), 장소를 판단
-    input (input_unit) {
+    //원, 리터, km의 단위(unit), 장소(place)를 판단
+    input (inputUnit) {
       type (InputUnit)
       min (Required) max (One)
-    }
-    
-    //[돈, 리터, 거리, 장소]
-    // input-group (atLeastOne) {
-    //   requires (OneOrMoreOf)
-    //   collect {
-    //     input (money) {          
-    //       type (Money)
-    //       max (One)
-    //     }
-    //     input (liter) {
-    //       type (Liter)
-    //       max (One)
-    //     }
-    //     input (distance) {          
-    //       type (Distance)
-    //       max (One)
-    //     }
-    //     // input (place) {          
-    //     //   type (Place)
-    //     //   max (One)
-    //     // }       
-    //   }  
-    // }      
-    
+      
+      default-init{
+        intent{
+          goal: InputUnit
+          value: InputUnit("place")
+        }      
+      }
+    }            
+            
     //question (몇 km, 몇 리터, 얼마)
     input (question) {
       type (Question)
       min (Required) max (One)
+    }  
+    
+    //place(출발지, 목적지)        
+    input (startPlace) {
+      type (StartPlace)
+      min (Optional) max (One)
+    }
+    
+    input (endPlace) {
+      type (EndPlace)
+      min (Optional) max (One)
+    }
+    
+    input (endPlaceUnit) {
+      type (EndPlaceUnit)
+      min (Optional) max (One)    
+    }
+      
+    //기기의 현재 위치 가져오기
+    //출발지 x && 목적지 o
+    computed-input (startPlaceMyPos){
+      type (StartPlaceMyPos)
+      min (Optional) max (One)
+      compute{
+        if(exists(endPlace) && !exists(startPlace)){
+          if($user.currentLocation.$exists){
+            intent{
+              goal: StartPlaceMyPos
+              value-set: geo.CurrentLocation { $expr ($user.currentLocation)}             
+            }          
+          }          
+        }
+      }
     }    
-    input (start_place) {
-      type (Start_Place)
-      min (Optional) max (One)
-    }
-    input (end_place) {
-      type (End_Place)
-      min (Optional) max (One)
-    }
-    input (end_place_unit) {
-      type (End_Place_Unit)
-      min (Optional) max (One)
-    }
   }
     
   output (Result){

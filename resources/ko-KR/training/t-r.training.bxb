@@ -1,7 +1,7 @@
 train (t-r76wa152uea3hfrl6f08xypm5) {
-  utterance ("[g:Result] (아반떼)[v:CarName]로 (홍대입구역)[v:Start_Place](에서)[v:InputUnit:place] (신촌역)[v:End_Place](까지)[v:End_Place_Unit] 가려면 (몇 리터)[v:Question:liter_what] 넣어야해?")
-  plan (dY7LCsJADEWvbz/CB4Lr/oS4cKH4wHUJNbSBmanMZPT3rSJiYZqsLueQXEwxq54UxGa1GHFlHtg/pODszCEaxTpNLVOInvdimErGPG1tyB/IMpZpvHW3/Gio4K4vPyG/OtGuMzt3j/oRFmnhFDmo1A6rNL8oef02maCHPgYYYoRxk9Dk/23Pm7fsFw==)
-  last-modified (1560935872109)
+  utterance ("[g:Result] (아반떼)[v:CarName]로 (홍대입구역)[v:StartPlace](에서)[v:InputUnit:place] (신촌역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 (몇 리터)[v:Question:liter_what] 넣어야해?")
+  plan (fY7JCsJAEETLPR/hhnjOT0gOHhQXPEsTm9gwM5GZHv19o14MjFafivegCxnG1wcFsXktRlx1DuzvUnJ+4BCNYpmmlilEzxsxTBVjkrZW5LdkGdM0LtxlZ6hkLP7zkxPFLO2s3S3qW/jxZB85qNQO8zQ/Knn9zBihgy566GOAYdPQ9O9r58Vb9hM=)
+  last-modified (1561093195710)
 }
 train (t-rrgj15vs675rd1w5qnfpfly6y) {
   utterance ("[g:Result] (아반떼)[v:CarName] (30)[v:InputValue](리터)[v:InputUnit:liter]면 기름값 (얼마)[v:Question:money_what]야")

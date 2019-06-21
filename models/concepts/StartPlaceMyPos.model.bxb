@@ -1,0 +1,4 @@
+structure (StartPlaceMyPos) {
+  description (현재 좌표를 가져옵니다.)
+  role-of (geo.CurrentLocation)
+}

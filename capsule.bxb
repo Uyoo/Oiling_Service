@@ -11,4 +11,18 @@ capsule {
     modern-prompt-rejection
     support-halt-effect-in-computed-inputs
   }
+  
+  capsule-imports{
+    import (viv.core) {
+      as (core)
+    }
+    import (viv.geo) {
+      as (geo)
+      version (9.17.18)
+    }
+  }
+  
+  permissions{
+    user-profile-access
+  }
 }

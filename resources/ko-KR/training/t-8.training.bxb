@@ -1,5 +1,0 @@
-train (t-8yrbtycfmpknvtmol75uvm1is) {
-  utterance ("[g:Result] (아반떼)[v:CarName] (30)[v:InputValue](리터)[v:InputUnit:liter]면 (몇 킬로미터)[v:Question:distance_what] 갈 수 있어")
-  plan (fYo7CgJBEETL7yn8BcZ7CSMDBQVNpZFibZiZlelpvb5roCaDVUlR72GK2e0pprHpNGhqL8b80CubI81DwbpOI8U8c6eB0hLzurWRvJdILOt4m+5eTkkLVn+EswQnFnXj4LSiXcIEAwwxwrhf6Penv7z/r/EC)
-  last-modified (1560498955994)
-}
