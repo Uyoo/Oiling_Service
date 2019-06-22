@@ -1,0 +1,304 @@
+// 결과 화면에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+    match: Result (this) {
+    min (Required) max (One)
+  }
+  
+  message {
+    template ("해당 질문에 대한 정보입니다.")
+    // if(size(this) == 1){
+    //   if(this.flag){
+    //     template ("[#{value(this.username)} 님,] 주변 2km이내의 맛집을 확인해보세요!")
+    //   }else{
+    //     template ("선택하신 맛집을 확인해보세요!")
+    //   }     
+    // }else{     
+    //   if(this.flag){
+    //     template ("[#{value(this.username)} 님,] 주변 2km이내의 맛집들을 가져와 보았어요!")
+    //   }else{
+    //     template ("맛집들을 가져와 보았어요.")
+    //   }    
+    // }   
+  }
+
+  render {
+    layout {
+      section {
+        content {
+                    
+          if(false){
+            single-line {
+              text {
+                style (Detail_M)
+                value("true인 경우")
+              }
+            }
+          }
+          
+          //메인 정보(타이틀)
+          title-card {
+            title-area {
+              halign (Start)
+              slot1 {
+                text {
+                  style (Title_S)
+                  value ("대표 값") // Best Eastern Hotels and Resorts
+                }
+              }              
+            }
+            // on-click {
+            //   intent {
+            //     goal: ShowHotelTitleCard
+            //   }
+            // }
+          }
+          
+          image-card {
+            aspect-ratio (4:3)
+            title-area {
+              halign (Start)
+              slot1 {
+                text {
+                  value ("아반떼") // Best Eastern Hotels and Resorts
+                  style (Title_S)
+                }
+              }              
+            }
+            image-url ("https://imgauto-phinf.pstatic.net/20150909_156/auto_1441771410714zz6VG_PNG/20150909130126_JHaDfDsy.png?type=f508_367")
+          }          
+          
+          
+          //메인 정보(타이틀)                                                          
+          for-each (this) {
+            as (items) {
+              index-var (i)                                  
+              //카드 형태로 정보 제공 
+              compound-card {
+                content {
+                  
+                  hbox {
+                    content {
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("모델연식: ")
+                            }
+                          }
+                        }
+                      }
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("2018")
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  hbox {
+                    content {
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("가솔린: ")
+                            }
+                          }
+                        }
+                      }
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("00km")
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  hbox {
+                    content {
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("디젤: ")
+                            }
+                          }
+                        }
+                      }
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("00km")
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  hbox {
+                    content {
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value (" Lpi: ")
+                            }
+                          }
+                        }
+                      }
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("00km")
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  //hbox 종료                                    
+                }
+              }
+              divider
+              
+               compound-card {
+                content {
+                  
+                  hbox {
+                    content {
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("모델연식: ")
+                            }
+                          }
+                        }
+                      }
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("2017")
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  hbox {
+                    content {
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("가솔린: ")
+                            }
+                          }
+                        }
+                      }
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("00km")
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  hbox {
+                    content {
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("디젤: ")
+                            }
+                          }
+                        }
+                      }
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("00km")
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  hbox {
+                    content {
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value (" Lpi: ")
+                            }
+                          }
+                        }
+                      }
+                      vbox {
+                        content {
+                          single-line {
+                            text {
+                              style (Detail_L)
+                              value ("00km")
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  //hbox 종료                                    
+                }
+              }
+            }
+          }
+          //for문 종료
+                    
+        }
+      }
+    }
+  }
+                                                 
+  
+  conversation-drivers {
+    conversation-driver {
+      template ("It's time to share.")
+    }
+  }
+    
+}

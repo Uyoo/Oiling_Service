@@ -1,3 +1,21 @@
-name (Result) {
-  description (결과)
+// structure (Result) {
+//   description (결과입니다.)
+//   property (func1) {
+//     type (Func1)
+//     min (Optional) max (One)
+//   }
+//   
+//   property (func2) {
+//     type (Func2)
+//     min (Optional) max (One)
+//   }
+//   
+//   property (func3) {
+//     type (Func3)
+//     min (Optional) max (One)
+//   }
+// }
+
+name (Result){
+  
 }
