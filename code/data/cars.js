@@ -9,7 +9,6 @@ module.exports =[
       mileage: 13.7,
       year: 2017,
      imageUrl: "https://imgauto-phinf.pstatic.net/20190415_2/auto_1555302793805jkAYa_PNG/20190415133137_iLYQXV09.png"
-      
     },
     
     modelYear: [
@@ -64,10 +63,11 @@ module.exports =[
       }      
     ]        
   },
-  
+
   //쏘나타
   { 
     carName: "쏘나타",        
+
     represent :
     {
       fuel: 'gasoline',
@@ -134,6 +134,7 @@ module.exports =[
       mileage: 11.1,
       year: 2018,
       imageUrl:"https://imgauto-phinf.pstatic.net/20170126_74/auto_1485420341158IovFc_PNG/20170126174539_qSFDBNBk.png?type=f508_367"
+
     },
     
     modelYear: [
@@ -169,7 +170,7 @@ module.exports =[
           ]
         }
       },
-      
+     
       //[1]: 2016
       {
         year: 2016,
@@ -189,8 +190,7 @@ module.exports =[
               engine: 2.2,
               mileage: 13.9
             }
-          ]
-          
+          ] 
         }
       }      
     ]        
@@ -238,6 +238,7 @@ module.exports =[
         }
       },
       
+
       //[1]: 2015
       {
         year: 2015,
@@ -248,7 +249,6 @@ module.exports =[
               mileage: 11.9
             }
           ]
-          
         }
       }
     ]        
@@ -263,8 +263,7 @@ module.exports =[
       engine: 1.6,
       mileage: 14.8,
       year: 2018,
-      imageUrl: "https://imgauto-phinf.pstatic.net/20180115_270/auto_1516006888908d2OHq_PNG/20180115180125_pco9ijLS.png?type=f508_367"
-      
+      imageUrl: "https://imgauto-phinf.pstatic.net/20180115_270/auto_1516006888908d2OHq_PNG/20180115180125_pco9ijLS.png?type=f508_367"      
     },
     
     modelYear: [      
@@ -280,7 +279,6 @@ module.exports =[
           ]
         }
       },
-      
       //[1]: 2015
       {
         year: 2015,
@@ -347,10 +345,10 @@ module.exports =[
           ]
         }
       },
-      
       //[1]: 2015
       {
         year: 2015,
+
         fuel: {
           gasoline: [
             {
@@ -365,13 +363,11 @@ module.exports =[
               engine: 3.3,
               mileage: 10.0
             }
-          ]
-          
+          ] 
         }
       }      
     ]        
-  },
-  
+  },  
   //모닝
   { 
     carName: "모닝",        
@@ -383,7 +379,6 @@ module.exports =[
       year: 2017,
       imageUrl: "https://imgauto-phinf.pstatic.net/20170104_44/auto_1483512702282KmB0I_PNG/20170104155110_Yg5BXbVP.png?type=f508_367"
     },
-    
     modelYear: [
       //[0]: 2017
       {
@@ -429,8 +424,7 @@ module.exports =[
       mileage: 14.7,
       year: 2018,
       imageUrl: "https://imgauto-phinf.pstatic.net/20170717_54/auto_1500268032004XV8aE_PNG/20170717140618_DBHrD72s.png?type=f508_367"
-    },
-    
+    },    
     modelYear: [
       //[0]: 2018
       {
@@ -444,27 +438,21 @@ module.exports =[
           ]
         }
       },
-      
       //[1]: 2015
       {
         year: 2015,
+
         fuel: {
           gasoline: [
             {
               engine: 1.0,
               mileage: 15.3
             }
-            
           ]
-          
         }
       }      
-    ]        
+    ]       
   },
-  
-  
-  //======
-  
   { 
     carName: "쏘렌토",        
     represent :
@@ -523,8 +511,7 @@ module.exports =[
       }      
     ]        
   },
-  
- { 
+  { 
     carName: "스포티지",        
     represent :
     {
@@ -532,9 +519,7 @@ module.exports =[
       engine: 2.0,
       mileage: 12.9,
       year: 2018,
-      imageUrl: "https://imgauto-phinf.pstatic.net/20170327_98/auto_1490594951493ssEj2_PNG/20170327150910_Ylk3StFM.png?type=f508_367"
- 
- 
+      imageUrl: "https://imgauto-phinf.pstatic.net/20170327_98/auto_1490594951493ssEj2_PNG/20170327150910_Ylk3StFM.png?type=f508_367" 
     },
     
     modelYear: [
@@ -578,8 +563,6 @@ module.exports =[
               engine: 2.0,
               mileage: 13.8
             },
-           
-           
           ]
         }
       }      
@@ -594,8 +577,7 @@ module.exports =[
       mileage: 13.0,
       year: 2018,
       imageUrl: "https://imgauto-phinf.pstatic.net/20190415_285/auto_1555303456766HlF2I_PNG/20190415134225_vxNXJPwK.png"
-    },
-    
+    },    
     modelYear: [
       //[0]: 2018
       {
@@ -612,8 +594,6 @@ module.exports =[
               engine: 1.0,
               mileage: 10.5
             }
-          
-            
           ]
         }
       },
@@ -628,8 +608,6 @@ module.exports =[
               mileage: 13.5
             }
           ]
-          
-       
         }
       }      
     ]        
@@ -645,7 +623,6 @@ module.exports =[
       year: 2019,
       imageUrl: "https://imgauto-phinf.pstatic.net/20190514_156/auto_1557838488818c1nej_PNG/20190514215447_AEP0hwcH.png?type=f508_367"
     },
-    
     modelYear: [
       //[0]: 2019
       {
@@ -667,8 +644,6 @@ module.exports =[
               engine: 2.2,
               mileage: 13.0
             }
-          
-            
           ]
         }
       },
@@ -688,8 +663,6 @@ module.exports =[
               mileage: 12.8
             }
           ]
-          
-       
         }
       }      
     ]        
@@ -703,8 +676,7 @@ module.exports =[
       mileage: 13.4,
       year: 2017,
       imageUrl: " https://imgauto-phinf.pstatic.net/20170529_155/auto_1496046801496CwCcO_PNG/20170529173251_q5yVtLX2.png?type=f508_367"
-    },
-    
+    },    
     modelYear: [
       //[0]: 2017
       {
@@ -721,14 +693,9 @@ module.exports =[
               engine: 1.6,
               mileage: 17.6
             }
-            
-           
-          
-            
           ]
         }
       },
-      
       //[1]: 2014
       {
         year: 2014,
@@ -738,26 +705,19 @@ module.exports =[
               engine: 1.4,
               mileage: 14.1
             },
-             
              {
               engine: 1.6,
               mileage: 14.0
             }
           ],
-          
           diesel: [
             {
               engine: 1.6,
               mileage: 16.5
             }
-             
-           
           ]
-          
-       
         }
       }      
-    ]        
+    ]
   }
-
 ]

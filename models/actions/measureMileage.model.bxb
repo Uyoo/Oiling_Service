@@ -74,7 +74,7 @@ action (measureMileage) {
     }    
   }
     
-  output (Data_rep){
+  output (Result_All){
      on-empty{
       halt{
         dialog{

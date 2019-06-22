@@ -1,5 +1,5 @@
 train (t-qp5zs7mmcs809ll4pst2kgvo7) {
-  utterance ("[g:Data_rep] (그랜저)[v:CarName] (50000)[v:InputValue](원)[v:InputUnit:won]이면 (몇 킬로미터)[v:Question:distance_what] 갈 수 있어")
-  plan (Y2BlkM0oTyzOzNXLz8zJzEuPL04tKstMTtVzTizyS8xNZZDDLu2SWJIYX5RawCCPXd4zr6C0JDQvs4RBAY+CsMScUpxWBJamFpdk5ucxMDAwMrACMQMDEwMzAwsDAwA=)
-  last-modified (1561194622104)
+  utterance ("[g:Result_All] (그랜저)[v:CarName] (50000)[v:InputValue](원)[v:InputUnit:won]이면 (몇 킬로미터)[v:Question:distance_what] 갈 수 있어")
+  plan (fYxLDkBAEAWf3zF8TuAOYmUjIWErE+nQSRsyH67PAbCoVVUKCdL1Upa3cmdhvUyWzMkzlbUyrdoI+btu9OHdoNmh+AlGJZ6QvRedJ+t411+HnqwXN1UiAGIkD0CAEBFwAw==)
+  last-modified (1561214906265)
 }
