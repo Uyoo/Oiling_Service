@@ -1,0 +1,5 @@
+train (t-4i5wuk9qtb395x5t6zm2dnbke) {
+  utterance ("[g:Result] (아반떼)[v:CarName]로 (건대입구역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 (얼마)[v:Question:money_what]어치 넣어야해?")
+  plan (fY3LCgIxDEWvj9Gf8AHien5CXLhQVHAtYQxjoM1I0+rvW3Shi2ouFxLOgWCMyfVBJr7uxIm2Z+Nwl4brI1tyEcsy9UyWAm/FMbWMadlaUdiRZ8zKeK2XvaOGsfjPTyoR87Kz0VuKL+HHk0Nii9IpRuihjwGGqPKOfH3yPVXu28vWEw==)
+  last-modified (1561094534603)
+}

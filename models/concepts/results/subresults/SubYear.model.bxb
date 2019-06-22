@@ -1,0 +1,3 @@
+integer (SubYear) {
+  description (서브 모델의 연식입니다.)
+}

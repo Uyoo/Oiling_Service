@@ -1,0 +1,11 @@
+structure (LPi) {
+  description (LPi의 결괏값을 저장합니다.)
+  property (engine) {
+    type (SubEngine)
+    min (Required) max (One)
+  }
+  property (res) {
+    type (SubRes)
+    min (Required) max (One)
+  }  
+}

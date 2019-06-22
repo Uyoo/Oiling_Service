@@ -1,0 +1,11 @@
+structure (Result_All) {
+  description (모든 결괏값입니다.)
+  property (data_rep) {
+    type (Data_rep)
+    min (Required) max (One)
+  }
+  property (data_subModels) {
+    type (Data_subModels)
+    min (Optional) max (Many)
+  }
+}

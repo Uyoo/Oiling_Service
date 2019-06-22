@@ -1,0 +1,15 @@
+structure (SubFuel) {
+  description (서브 모델의 연료입니다.)
+  property (gasoline) {
+    type (Gasoline)
+    min (Optional) max (Many)
+  }
+  property (diesel) {
+    type (Diesel)
+    min (Optional) max (Many)
+  }
+  property (LPi) {
+    type (LPi)
+    min (Optional) max (Many)
+  }
+}

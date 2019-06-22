@@ -1,0 +1,11 @@
+structure (Data_subModels) {
+  description (서브 모델의 데이터 명세입니다)
+  property (year) {
+    type (SubYear)
+    min (Required) max (One)
+  }
+  property (fuel) {
+    type (SubFuel)
+    min (Required) max (One)
+  }  
+}
