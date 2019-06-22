@@ -24,7 +24,7 @@ function won_literWhat(carName, input_value){
   let oilValue = getOilApi()
   
   let won_literWhat = oilValue.map(item => {    
-    let calculate = 0
+    let calculate = 0       
     let object = {      
       fuel: '',
       liter: ''
@@ -60,56 +60,70 @@ function won_distanceWhat(carName, input_value){
   let oilValue = getOilApi()
   
   //cars.js에서 연비(mileage) 받아오기(가솔린, 디젤, 부탄(Lpi))
-  const carDatas = require('../data/cars.js')
-  let fuels = []
+  const carDatas = require('../data/cars.js')    
+  let data_rep
+  let data_subModels
+  let won_distanceResult = [] //해당 function의 result  
+  let car
   //모델과 해당되는 객체만 가져오기
   for(let i=0; i<carDatas.length; i++){
-    if(carDatas[i].carName == String(carName)){ 
-      let data = carDatas[i]  //해당 자동차 정보 객체
-      for(let key in data){
-        if(key == 'fuel'){
-          fuels = data[key]   //해당 자동차의 연료 정보(가솔린, 디젤, LPI)     
-          break
-        }
-      }
+    if(carDatas[i].carName == String(carName)){       
+      data_rep = carDatas[i].represent  //represent 객체      
+      data_subModels = carDatas[i].modelYear  //subModels 객체
+      car= carDatas[i].carName
       break
     }    
-  }  
-  
-  //주행거리 = 주유비 x 연비 ÷ 기름값
-  let won_distanceWhat = []
-  let i = 0
-  for(let key in fuels){
-    let calculate = 0
-    let object = {
-      fuel: '',
-      distance: ''
-    }
-    if(key == 'gasoline' && oilValue[i].PRODCD == 'B027'){      
-      calculate = input_value * fuels[key][0].mileage / oilValue[i].PRICE     
-      object.fuel = key
-      object.distance = calculate
-      i += 1
-      
-    } else if(key == 'diesel' && oilValue[i].PRODCD == 'D047'){      
-      calculate = input_value * fuels[key][0].mileage / oilValue[i].PRICE
-      object.fuel = key
-      object.distance = calculate
-      i += 1
-      
-    } else if(key == 'LPi' && oilValue[i].PRODCD == 'K015'){      
-      calculate = input_value * fuels[key][0].mileage / oilValue[i].PRICE  
-      object.fuel = key
-      object.distance = calculate
-      i += 1
-    }    
-    
-    won_distanceWhat.push(object)
   }
-  console.log('won_distanceWhat:', won_distanceWhat)
-  
-  return 'won_distanceWhat'
+  //console.log(i)
+  //주행거리 = 주유비 x 연비 ÷ 기름값            
+  if(data_rep.fuel == 'gasoline'){      
+      calculate = input_value * data_rep.mileage / oilValue[0].PRICE                 
+      
+  } else if(data_rep.fuel == 'diesel'){      
+    calculate = input_value * data_rep.mileage / oilValue[1].PRICE       
+
+  } else if(data_rep.fuel == 'LPi'){      
+    calculate = input_value * data_rep.mileage / oilValue[2].PRICE            
+  }   
+  data_rep["res"] = calculate
+  data_rep["carName"]=car
+  won_distanceResult.push(data_rep)
+  //console.log(data_rep)
+        
+  for(let t=0; t<data_subModels.length; t++){ //각 연식 모델들에 대해 계산
+    let model = data_subModels[t]
+    for(let key in model.fuel){ //해당 연식의 주종에 대해 계산
+      if(key == 'gasoline'){        
+        for(let j = 0; j < model.fuel.gasoline.length; j++){ //해당 주종에 각 엔진들에 대해 결과 삽입
+          calculate = input_value * model.fuel[key][j].mileage / oilValue[0].PRICE
+          data_subModels[t].fuel[key][j]["res"] = calculate 
+        }
+      }else if(key == 'diesel'){        
+        for(let j = 0; j < model.fuel.diesel.length; j++){
+          calculate = input_value * model.fuel[key][j].mileage / oilValue[1].PRICE
+          data_subModels[t].fuel[key][j]["res"] = calculate 
+        }
+      }else if(key == 'LPi'){        
+        for(let j = 0; j < model.fuel.LPi.length; j++){
+          calculate = input_value * model.fuel[key][j].mileage / oilValue[2].PRICE
+          data_subModels[t].fuel[key][j]["res"] = calculate 
+        }
+      }
+    }
+  }
+  //won_distanceResult.push(data_subModels)
+  console.log(won_distanceResult)
+  return data_rep
 }
+/*{
+    carName : car,
+    year : data_rep.year,
+    fuel : data_rep.fuel,
+    engine : data_rep.engine,
+    res : data_rep.res,
+    imageUrl : data_rep.imageUrl
+  }*/
+
 
 // ======= inputUnit이 리터(liter)인 경우 =======
 //00리터로 몇 km 갈 수 있어? -> return 거리

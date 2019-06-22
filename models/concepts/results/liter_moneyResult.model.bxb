@@ -1,0 +1,11 @@
+structure (liter_moneyResult) {
+  description (리터로 얼마 결과값 오브젝트)
+  property (fuel) {
+    type (Fuel)
+    min (Required) max (One)
+  }
+  property (money) {
+    type (Money)
+    min (Required) max (One)
+  }
+}

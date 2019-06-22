@@ -1,0 +1,28 @@
+structure (Data_rep) {
+  description (대표 결과값)
+  property (carName) {
+    type (CarName)
+    min (Required) max (One)
+  }
+  property (year) {
+    type (Year)
+    min (Required) max (One)
+  }
+  property (fuel) {
+    type (Fuel)
+    min (Required) max (One)
+  }
+  property (engine) {
+    type (Engine)
+    min (Required) max (One)
+  }
+  property (res) {
+    type (Res)
+    min (Required) max (One)
+  }
+  property (imageUrl) {
+    type (ImageUrl)
+    min (Required) max (One)
+  }
+  
+}
