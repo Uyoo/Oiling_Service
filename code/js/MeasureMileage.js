@@ -92,7 +92,7 @@ function getDatas(carDatas, name){
   }
 }
 
-function makeResult(carName, input_value, f){
+function makeResult(carName, input_value, f, choice){
   //최근 1주의 주간 평균 유가(전국)
   //기름 api에서 기름값 받아오기(가솔린, 디젤, 부탄(Lpi))
   let oilValue = getOilApi()
@@ -114,42 +114,67 @@ function makeResult(carName, input_value, f){
   
   //주행거리 = 주유비 x 연비 ÷ 기름값            
   if(data_rep.fuel == 'gasoline'){     
-    calculate = f(input_value, data_rep.mileage, oilValue[0].PRICE)
+    calculate = distinChoice(f(input_value, data_rep.mileage, oilValue[0].PRICE), choice)
   } else if(data_rep.fuel == 'diesel'){
-    calculate = f(input_value, data_rep.mileage, oilValue[1].PRICE)
+    calculate = distinChoice(f(input_value, data_rep.mileage, oilValue[1].PRICE), choice)
   } else if(data_rep.fuel == 'LPi'){      
-    calculate = f(input_value, data_rep.mileage, oilValue[2].PRICE)           
+    calculate = distinChoice(f(input_value, data_rep.mileage, oilValue[2].PRICE), choice)
   }
   
+  function distinChoice(calculate, choice) {
+    if(choice == "distance"){
+      return Math.floor(Math.round(calculate))      
+    }else if(choice == "money"){
+      return Math.floor(Math.round(calculate/10)*10)
+    }
+    else{    
+      return Math.round(calculate*10)/10
+    }
+  }
+  function getunit(choice){
+    if(choice == "distance"){
+      return "km"        
+    }else if(choice == "money"){
+      return "원"  
+    }
+    else{    
+      return "리터"  
+    }
+  } 
+
+  
+  calculate = distinChoice(calculate, choice)
+    
   data_rep["res"] = calculate  
   data_rep["carName"] = car
-  delete data_rep["mileage"] 
+  data_rep["unit"]  =getunit(choice)
+  delete data_rep["mileage"]   
   
   for(let t=0; t<data_subModels.length; t++){ //각 연식 모델들에 대해 계산
     let model = data_subModels[t]
     for(let key in model.fuel){ //해당 연식의 주종에 대해 계산
       if(key == 'gasoline'){        
         for(let j = 0; j < model.fuel.gasoline.length; j++){ //해당 주종에 각 엔진들에 대해 결과 삽입
-          calculate = f(input_value, model.fuel[key][j].mileage, oilValue[0].PRICE)
+          calculate = distinChoice(f(input_value, model.fuel[key][j].mileage, oilValue[0].PRICE), choice)
           data_subModels[t].fuel[key][j]["res"] = calculate 
           delete data_subModels[t].fuel[key][j]["mileage"]
         }
       }else if(key == 'diesel'){        
         for(let j = 0; j < model.fuel.diesel.length; j++){
-          calculate = f(input_value, model.fuel[key][j].mileage, oilValue[1].PRICE)
+          calculate = distinChoice(f(input_value, model.fuel[key][j].mileage, oilValue[1].PRICE), choice)
           data_subModels[t].fuel[key][j]["res"] = calculate
           delete data_subModels[t].fuel[key][j]["mileage"]
         }
       }else if(key == 'LPi'){        
         for(let j = 0; j < model.fuel.LPi.length; j++){
-          calculate = f(input_value, model.fuel[key][j].mileage, oilValue[2].PRICE)
+          calculate = distinChoice(f(input_value, model.fuel[key][j].mileage, oilValue[2].PRICE), choice)
           data_subModels[t].fuel[key][j]["res"] = calculate
           delete data_subModels[t].fuel[key][j]["mileage"]
         }
       }
     }
   }
-  
+    console.log(data_rep.res)
   return {
     data_rep: data_rep, 
     data_subModels: data_subModels
@@ -257,9 +282,11 @@ function liter_moneyWhat(carName, input_value){
 //00원으로 몇 km 갈 수 있어? -> return 거리
 function won_distanceWhat(carName, input_value){
   const f = (a, b, c) => a * b / c
+  let choice = "distance"
   let result
-   
-  result = makeResult(carName, input_value, f)
+  
+  
+  result = makeResult(carName, input_value, f, choice)
   console.log(result)
   return result
 }
@@ -269,9 +296,10 @@ function won_distanceWhat(carName, input_value){
 //연비 x 리터 = KM
 function liter_distanceWhat(carName, input_value){    
   const f = (a, b, c) => a * b
+  let choice = "distance"
   var result
-   
-  result = makeResult(carName, input_value, f)
+    
+  result = makeResult(carName, input_value, f, choice)
   
   console.log(result)
   return result
@@ -280,9 +308,10 @@ function liter_distanceWhat(carName, input_value){
 //00km면 기름값 얼마야? -> return 기름값
 function distance_moneyWhat(carName, input_value){
   const f = (a, b, c) => a / b * c
+  let choice = "money"
   var result
    
-  result = makeResult(carName, input_value, f)
+  result = makeResult(carName, input_value, f, choice)
     
   console.log(result)
   return result
@@ -291,9 +320,10 @@ function distance_moneyWhat(carName, input_value){
 //00km면 몇 리터 채워야돼? -> return 리터 아반떼 30킬로면 몇리터  (리터=KM/연비)
 function distance_literWhat(carName, input_value){    
   const f = (a, b, c) => a / b
+  let choice = "liter"
   var result
    
-  result = makeResult(carName, input_value, f)
+  result = makeResult(carName, input_value, f, choice)
   
   console.log(result)
   return result

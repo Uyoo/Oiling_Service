@@ -25,4 +25,9 @@ structure (Data_rep) {
     min (Required) max (One)
   }
   
+  property (unit) {
+    type (Unit)
+    min (Required) max (One)
+  }
+  
 }

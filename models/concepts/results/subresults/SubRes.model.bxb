@@ -1,3 +1,3 @@
-decimal (SubRes) {
+name (SubRes) {
   description (서브 모델의 결괏값입니다.)
 }
