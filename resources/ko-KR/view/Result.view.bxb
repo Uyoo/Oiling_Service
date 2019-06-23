@@ -1,71 +1,46 @@
 // 결과 화면에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
 result-view {
-    match: Result_All (this) {
+  match: Result_All (this) {
     min (Required) max (One)
   }
-  
+
   message {
-    template ("결과값 : #{value(this.data_rep.res)} 입니다.")
-    // if(size(this) == 1){
-    //   if(this.flag){
-    //     template ("[#{value(this.username)} 님,] 주변 2km이내의 맛집을 확인해보세요!")
-    //   }else{
-    //     template ("선택하신 맛집을 확인해보세요!")
-    //   }     
-    // }else{     
-    //   if(this.flag){
-    //     template ("[#{value(this.username)} 님,] 주변 2km이내의 맛집들을 가져와 보았어요!")
-    //   }else{
-    //     template ("맛집들을 가져와 보았어요.")
-    //   }    
-    // }   
+    template ("#{value(this.data_rep.res)} #{value(this.data_rep.unit)} 입니다.")
   }
 
   render {
     layout {
       section {
         content {
-                    
-          if(false){
-            single-line {
-              text {
-                style (Detail_M)
-                value("true인 경우")
-              }
-            }
-          }
-          
-          //메인 정보(타이틀)
-          title-card {
-            title-area {
-              halign (Start)
-              slot1 {
-                text {
-                  style (Title_S)
-                  value ("#{value(this.data_rep.year)}년식 #{value(this.data_rep.engine)} #{value(this.data_rep.fuel)}") // Best Eastern Hotels and Resorts
-                }
-              }              
-            }
-            // on-click {
-            //   intent {
-            //     goal: ShowHotelTitleCard
-            //   }
-            // }
-          }
-          
+
           image-card {
             aspect-ratio (4:3)
             title-area {
+              
               halign (Start)
               slot1 {
                 text {
                   value ("#{value(this.data_rep.carName)}") // Best Eastern Hotels and Resorts
                   style (Title_S)
                 }
-              }              
+              }
+              slot2 {
+                single-line{
+                  text{
+                    style (Detail_M_Soft)
+                    value("#{value(this.data_rep.year)}년식 #{value(this.data_rep.engine)} #{value(this.data_rep.fuelKorean)}")
+                    
+                  }
+                }
+                
+     
+              }
+              
             }
             image-url ("#{value(this.data_rep.imageUrl)}")
-          }          
+          }       
+          
+          
           divider
           title-area{
             slot1{
@@ -75,23 +50,23 @@ result-view {
               }
             }
           }
-            
-           
+
+
           //메인 정보(타이틀)                                                          
           for-each (this.data_subModels) {
             as (Data_subModels) {
-                                             
+
               //카드 형태로 정보 제공 
               compound-card {
                 content {
-                  
+
                   hbox {
                     content {
                       vbox {
                         content {
                           single-line {
                             text {
-                              style (Detail_L)
+                              style (Title_XS)
                               value ("모델연식: ")
                             }
                           }
@@ -101,119 +76,109 @@ result-view {
                         content {
                           single-line {
                             text {
-                              style (Detail_L)
-                              value ("#{value(Data_subModels.year)}")
+                              style (Title_XS)
+                              value ("#{value(Data_subModels.year)} 년식")
                             }
                           }
                         }
                       }
                     }
                   }
-                  
+
                   for-each (Data_subModels.fuel.gasoline) {
-                  as (gasoline) {
-                    hbox {
-                      content {
-                        vbox {
-                          content {
-                            single-line {
-                              text {
-                                style (Detail_L)
-                                value ("#{value(gasoline.engine)} 가솔린: ")
+                    as (gasoline) {
+                      hbox {
+                        content {
+                          vbox {
+                            content {
+                              single-line {
+                                text {
+                                  style (Detail_L)
+                                  value ("#{value(gasoline.engine)} 가솔린: ")
+                                }
                               }
                             }
                           }
-                        }
-                        vbox {
-                          content {
-                            single-line {
-                              text {
-                                style (Detail_L)
-                                value ("#{value(gasoline.res)}")
+                          vbox {
+                            content {
+                              single-line {
+                                text {
+                                  style (Detail_L_Soft)
+                                  value ("#{value(gasoline.res)} #{value(this.data_rep.unit)}")
+                                }
                               }
                             }
                           }
                         }
                       }
-                     }
                     }
                   }
                   for-each (Data_subModels.fuel.diesel) {
-                  as (diesel) {
+                    as (diesel) {
 
-                    hbox {
-                      content {
-                        vbox {
-                          content {
-                            single-line {
-                              text {
-                                style (Detail_L)
-                                value ("#{value(diesel.engine)} 디젤: ")
+                      hbox {
+                        content {
+                          vbox {
+                            content {
+                              single-line {
+                                text {
+                                  style (Detail_L)
+                                  value ("#{value(diesel.engine)} 디젤: ")
+                                }
                               }
                             }
                           }
-                        }
-                        vbox {
-                          content {
-                            single-line {
-                              text {
-                                style (Detail_L)
-                                  value ("#{value(diesel.res)}")
+                          vbox {
+                            content {
+                              single-line {
+                                text {
+                                  style (Detail_L_Soft)
+                                  value ("#{value(diesel.res)} #{value(this.data_rep.unit)}")
+                                }
                               }
                             }
                           }
                         }
                       }
-                     }
                     }
                   }
                   for-each (Data_subModels.fuel.LPi) {
-                  as (LPi) {
-                    hbox {
-                      content {
-                        vbox {
-                          content {
-                            single-line {
-                              text {
-                                style (Detail_L)
-                                value ("#{value(LPi.engine)} Lpi: ")
+                    as (LPi) {
+                      hbox {
+                        content {
+                          vbox {
+                            content {
+                              single-line {
+                                text {
+                                  style (Detail_L)
+                                  value ("#{value(LPi.engine)} Lpi: ")
+                                }
                               }
                             }
                           }
-                        }
-                        vbox {
-                          content {
-                            single-line {
-                              text {
-                                style (Detail_L)
-                                  value ("#{value(LPi.res)}")
+                          vbox {
+                            content {
+                              single-line {
+                                text {
+                                  style (Detail_L_Soft)
+                                  value ("#{value(LPi.res)} #{value(this.data_rep.unit)}")
+                                }
                               }
                             }
                           }
                         }
                       }
+                      //hbox 종료                                    
                     }
-                    //hbox 종료                                    
-                   }
                   }
                 }
-                 
               }
-              
+
             }
           }
           //for문 종료
-                    
         }
       }
     }
   }
-                                                 
-  
-  conversation-drivers {
-    conversation-driver {
-      template ("It's time to share.")
-    }
-  }
-    
 }

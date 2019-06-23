@@ -1,0 +1,5 @@
+train (t-ekaa4095bs8786j85ovf9ff3r) {
+  utterance ("[g:CurrentFuelPrice] 현재 (엘피지)[v:Fuel:LPi] 기름값 얼마야?")
+  plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
+  last-modified (1561278499833)
+}

@@ -29,5 +29,8 @@ structure (Data_rep) {
     type (Unit)
     min (Required) max (One)
   }
-  
+  property (fuelKorean) {
+    type (FuelKorean)
+    min (Required) max (One)
+  }
 }

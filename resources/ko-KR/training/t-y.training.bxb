@@ -1,0 +1,10 @@
+train (t-y01awxiodtz1jpz9mapzvol50) {
+  utterance ("[g:Result_moneyLiter] (엘피지)[v:Fuel:LPi] (1.5)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 얼마야?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561278597071)
+}
+train (t-ywcvbm0h9qhxy9xzwrv5oggy6) {
+  utterance ("[g:Result_moneyLiter] (경유)[v:Fuel:diesel] (2)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 얼마야?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561278596697)
+}

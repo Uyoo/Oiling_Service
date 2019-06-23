@@ -140,13 +140,24 @@ function makeResult(carName, input_value, f, choice){
       return "리터"  
     }
   } 
+  function getKoreanfuel(fuelname){
+    if(fuelname == "gasoline"){
+      return "가솔린"        
+    }else if(fuelname == "diesel"){
+      return "디젤"  
+    }
+    else{    
+      return "LPi"  
+    }
+  } 
 
   
   calculate = distinChoice(calculate, choice)
     
   data_rep["res"] = calculate  
   data_rep["carName"] = car
-  data_rep["unit"]  =getunit(choice)
+  data_rep["unit"]  = getunit(choice)
+  data_rep["fuelKorean"]  = getKoreanfuel(data_rep.fuel)
   delete data_rep["mileage"]   
   
   for(let t=0; t<data_subModels.length; t++){ //각 연식 모델들에 대해 계산

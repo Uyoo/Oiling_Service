@@ -1,0 +1,5 @@
+train (t-b8y0acgcngek7mipst2fm740k) {
+  utterance ("[g:CurrentFuelPrice] 현재 (휘발유)[v:Fuel:gasoline] 기름값 얼마야?")
+  plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
+  last-modified (1561278056769)
+}
