@@ -1,3 +1,8 @@
+train (t-livkaymx8itewxpts6mjb582r) {
+  utterance ("[g:Result_All] (모닝)[v:CarName]으로 (수원역)[v:EndPlace](까지)[v:EndPlaceUnit] 기름값 (얼마)[v:Question:money_what]나와?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561284235936)
+}
 train (t-lvbnj7dbkup8s59rtwrmj7wek) {
   utterance ("[g:CurrentFuelPrice] 현재 (경유)[v:Fuel:diesel] 기름값 얼마야?")
   plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)

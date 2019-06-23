@@ -9,11 +9,11 @@ action (measureMileage) {
       min (Required) max (One)
     }
            
-    //연료
-    input (fuel) {
-      type (Fuel)
-      min (Optional) max (One)
-    }
+    // //연료
+    // input (fuel) {
+    //   type (Fuel)
+    //   min (Optional) max (One)
+    // }
     
     //00(value)원, 리터, km(unit)
     input (inputValue){

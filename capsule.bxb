@@ -1,10 +1,10 @@
 capsule {
   id (hwasim.oiling_service)
-  version (2.0.0)
+  version (2.2.0)
   format (3)
   targets {
     target (bixby-mobile-ko-KR)
-    target (bixby-mobile-en-US){enabled (false)}
+    target (bixby-mobile-en-US){enabled (true)}
   }
   runtime-flags {
     concepts-inherit-super-type-features
@@ -25,4 +25,6 @@ capsule {
   permissions{
     user-profile-access
   }
+  
+  
 }

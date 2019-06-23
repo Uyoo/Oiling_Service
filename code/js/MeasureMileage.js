@@ -340,7 +340,7 @@ function distance_literWhat(carName, input_value){
   return result
 }
 
-module.exports.function = function measureMileage (carName, fuel, inputValue, inputUnit, question, 
+module.exports.function = function measureMileage (carName, inputValue, inputUnit, question, 
                                                     startPlace, startPlaceMyPos, endPlace, endPlaceUnit) {
   let console = require('console')  
   let result = ''
