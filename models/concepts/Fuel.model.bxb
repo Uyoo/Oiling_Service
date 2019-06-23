@@ -1,3 +1,6 @@
-name (Fuel) {
+enum (Fuel) {
   description (연료)
+  symbol (gasoline)
+  symbol (diesel)
+  symbol (LPi)
 }

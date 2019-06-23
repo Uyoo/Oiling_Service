@@ -1,0 +1,18 @@
+action (money_liter) {
+  description (리터와 가격에 대한 기름 정보를 알려줍니다.)
+  collect {
+    input (fuel) {
+      type (Fuel)
+      min (Optional) max (One)
+    }
+    input (inputValue) {
+      type (InputValue)
+      min (Optional) max (One)
+    }
+    input (inputUnit) {
+      type (InputUnit)
+      min (Optional) max (One)
+    }
+  }
+  output (Result_moneyLiter)
+}
