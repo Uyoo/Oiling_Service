@@ -149,8 +149,11 @@ function makeResult(carName, input_value, f){
       }
     }
   }
-  const carDatas2 = require('../data/cars.js')    
-  return [data_rep, data_subModels]
+  
+  return {
+    data_rep: data_rep, 
+    data_subModels: data_subModels
+  }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ======= inputUnit이 돈(won)인 경우 =======
@@ -254,14 +257,11 @@ function liter_moneyWhat(carName, input_value){
 //00원으로 몇 km 갈 수 있어? -> return 거리
 function won_distanceWhat(carName, input_value){
   const f = (a, b, c) => a * b / c
-  var result
+  let result
    
   result = makeResult(carName, input_value, f)
-
-  return {    
-    data_rep : result[0],
-    data_subModels : result[1]
-  }
+  console.log(result)
+  return result
 }
 
 // ======= inputUnit이 리터(liter)인 경우 =======
@@ -273,10 +273,8 @@ function liter_distanceWhat(carName, input_value){
    
   result = makeResult(carName, input_value, f)
   
-  return {    
-    data_rep : result[0],
-    data_subModels : result[1]
-  }
+  console.log(result)
+  return result
 }
 // ======= inputUnit이 거리(distance)인 경우 =======
 //00km면 기름값 얼마야? -> return 기름값
@@ -286,10 +284,8 @@ function distance_moneyWhat(carName, input_value){
    
   result = makeResult(carName, input_value, f)
     
-  return {    
-    data_rep : result[0],
-    data_subModels : result[1]
-  }
+  console.log(result)
+  return result
 }
 
 //00km면 몇 리터 채워야돼? -> return 리터 아반떼 30킬로면 몇리터  (리터=KM/연비)
@@ -299,10 +295,8 @@ function distance_literWhat(carName, input_value){
    
   result = makeResult(carName, input_value, f)
   
-  return {    
-    data_rep : result[0],
-    data_subModels : result[1]
-  }
+  console.log(result)
+  return result
 }
 
 module.exports.function = function measureMileage (carName, fuel, inputValue, inputUnit, question, 

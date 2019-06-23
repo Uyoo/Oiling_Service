@@ -1,11 +1,11 @@
 // 결과 화면에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
 result-view {
-    match: Result (this) {
+    match: Result_All (this) {
     min (Required) max (One)
   }
   
   message {
-    template ("해당 질문에 대한 정보입니다.")
+    template ("결과값 : #{value(this.data_rep.res)} 입니다.")
     // if(size(this) == 1){
     //   if(this.flag){
     //     template ("[#{value(this.username)} 님,] 주변 2km이내의 맛집을 확인해보세요!")
@@ -42,7 +42,7 @@ result-view {
               slot1 {
                 text {
                   style (Title_S)
-                  value ("대표 값") // Best Eastern Hotels and Resorts
+                  value ("#{value(this.data_rep.year)}년식 #{value(this.data_rep.engine)} #{value(this.data_rep.fuel)}") // Best Eastern Hotels and Resorts
                 }
               }              
             }
@@ -59,19 +59,28 @@ result-view {
               halign (Start)
               slot1 {
                 text {
-                  value ("아반떼") // Best Eastern Hotels and Resorts
+                  value ("#{value(this.data_rep.carName)}") // Best Eastern Hotels and Resorts
                   style (Title_S)
                 }
               }              
             }
-            image-url ("https://imgauto-phinf.pstatic.net/20150909_156/auto_1441771410714zz6VG_PNG/20150909130126_JHaDfDsy.png?type=f508_367")
+            image-url ("#{value(this.data_rep.imageUrl)}")
           }          
-          
-          
+          divider
+          title-area{
+            slot1{
+              text{
+                style(Title_XS)
+                value("다른 모델 보기")
+              }
+            }
+          }
+            
+           
           //메인 정보(타이틀)                                                          
-          for-each (this) {
-            as (items) {
-              index-var (i)                                  
+          for-each (this.data_subModels) {
+            as (Data_subModels) {
+                                             
               //카드 형태로 정보 제공 
               compound-card {
                 content {
@@ -93,198 +102,105 @@ result-view {
                           single-line {
                             text {
                               style (Detail_L)
-                              value ("2018")
+                              value ("#{value(Data_subModels.year)}")
                             }
                           }
                         }
                       }
                     }
                   }
-
-                  hbox {
-                    content {
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("가솔린: ")
-                            }
-                          }
-                        }
-                      }
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("00km")
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-
-                  hbox {
-                    content {
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("디젤: ")
-                            }
-                          }
-                        }
-                      }
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("00km")
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-
-                  hbox {
-                    content {
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value (" Lpi: ")
-                            }
-                          }
-                        }
-                      }
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("00km")
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                  //hbox 종료                                    
-                }
-              }
-              divider
-              
-               compound-card {
-                content {
                   
-                  hbox {
-                    content {
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("모델연식: ")
+                  for-each (Data_subModels.fuel.gasoline) {
+                  as (gasoline) {
+                    hbox {
+                      content {
+                        vbox {
+                          content {
+                            single-line {
+                              text {
+                                style (Detail_L)
+                                value ("#{value(gasoline.engine)} 가솔린: ")
+                              }
+                            }
+                          }
+                        }
+                        vbox {
+                          content {
+                            single-line {
+                              text {
+                                style (Detail_L)
+                                value ("#{value(gasoline.res)}")
+                              }
                             }
                           }
                         }
                       }
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("2017")
-                            }
-                          }
-                        }
-                      }
+                     }
                     }
                   }
+                  for-each (Data_subModels.fuel.diesel) {
+                  as (diesel) {
 
-                  hbox {
-                    content {
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("가솔린: ")
+                    hbox {
+                      content {
+                        vbox {
+                          content {
+                            single-line {
+                              text {
+                                style (Detail_L)
+                                value ("#{value(diesel.engine)} 디젤: ")
+                              }
+                            }
+                          }
+                        }
+                        vbox {
+                          content {
+                            single-line {
+                              text {
+                                style (Detail_L)
+                                  value ("#{value(diesel.res)}")
+                              }
                             }
                           }
                         }
                       }
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("00km")
+                     }
+                    }
+                  }
+                  for-each (Data_subModels.fuel.LPi) {
+                  as (LPi) {
+                    hbox {
+                      content {
+                        vbox {
+                          content {
+                            single-line {
+                              text {
+                                style (Detail_L)
+                                value ("#{value(LPi.engine)} Lpi: ")
+                              }
+                            }
+                          }
+                        }
+                        vbox {
+                          content {
+                            single-line {
+                              text {
+                                style (Detail_L)
+                                  value ("#{value(LPi.res)}")
+                              }
                             }
                           }
                         }
                       }
                     }
+                    //hbox 종료                                    
+                   }
                   }
-
-                  hbox {
-                    content {
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("디젤: ")
-                            }
-                          }
-                        }
-                      }
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("00km")
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-
-                  hbox {
-                    content {
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value (" Lpi: ")
-                            }
-                          }
-                        }
-                      }
-                      vbox {
-                        content {
-                          single-line {
-                            text {
-                              style (Detail_L)
-                              value ("00km")
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                  //hbox 종료                                    
                 }
+                 
               }
+              
+
             }
           }
           //for문 종료
