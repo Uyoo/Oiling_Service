@@ -137,7 +137,7 @@ function makeResult(carName, input_value, f, choice){
       return "원"  
     }
     else{    
-      return "리터"  
+      return "ℓ"  
     }
   } 
   function getKoreanfuel(fuelname){

@@ -1,3 +1,16 @@
-name (Result_moneyLiter) {
-  description (__DESCRIPTION__)
+structure (Result_moneyLiter) {
+  description (Money_Liter의 결과 오브젝트)
+  property (ans) {
+    type (Ans)
+    min (Required) max (One)
+  }
+  property (baseValue) {
+    type (BaseValue)
+    min (Required) max (One)
+  }
+
+  property (baseFuel) {
+    type (BaseFuel)
+    min (Required) max (One)
+  }
 }

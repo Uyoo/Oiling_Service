@@ -1,0 +1,35 @@
+result-view {
+  match: Result_moneyLiter (this) {
+    min (Required) max (One)
+  }
+  
+  message {
+    template ("약 #{value(this.ans)} 입니다.")
+  }
+  
+  render {
+    layout {
+      section {
+        content {
+          
+          title-area{
+            halign (Center)
+            slot1{
+              text{
+                style(Detail_L_Soft)
+                value("#{value(this.baseFuel)} 1ℓ당 #{value(this.baseValue)}원 기준")
+              }
+            }
+            
+          }
+          
+          
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+}

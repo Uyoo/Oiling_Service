@@ -17,7 +17,7 @@ result-view {
             slot1 {
               text {              
                 value {                
-                  template ("약 #{value(this.price)}원 입니다.")
+                  template ("1ℓ당 약 #{value(this.price)}원 입니다.")
                 }
                 style (Title_M)
               }

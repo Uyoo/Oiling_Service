@@ -1,0 +1,5 @@
+train (t-xv79lqi4seh8fmazqwx33dp5d) {
+  utterance ("[g:Result_All] (k7)[v:CarName]타고 (구로구청)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561281205117)
+}

@@ -5,7 +5,7 @@ result-view {
   }
 
   message {
-    template ("#{value(this.data_rep.res)} #{value(this.data_rep.unit)} 입니다.")
+    template ("약 #{value(this.data_rep.res)} #{value(this.data_rep.unit)} 입니다.")
   }
 
   render {
@@ -67,7 +67,7 @@ result-view {
                           single-line {
                             text {
                               style (Title_XS)
-                              value ("모델연식: ")
+                              value ("모델연식 ")
                             }
                           }
                         }
@@ -94,7 +94,7 @@ result-view {
                               single-line {
                                 text {
                                   style (Detail_L)
-                                  value ("#{value(gasoline.engine)} 가솔린: ")
+                                  value ("#{value(gasoline.engine)} 가솔린 ")
                                 }
                               }
                             }
@@ -123,7 +123,7 @@ result-view {
                               single-line {
                                 text {
                                   style (Detail_L)
-                                  value ("#{value(diesel.engine)} 디젤: ")
+                                  value ("#{value(diesel.engine)} 디젤 ")
                                 }
                               }
                             }
@@ -151,7 +151,7 @@ result-view {
                               single-line {
                                 text {
                                   style (Detail_L)
-                                  value ("#{value(LPi.engine)} Lpi: ")
+                                  value ("#{value(LPi.engine)} LPI ")
                                 }
                               }
                             }
