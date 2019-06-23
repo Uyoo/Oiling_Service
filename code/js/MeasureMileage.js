@@ -104,8 +104,10 @@ function makeResult(carName, input_value, f){
   let car //차 이름
   let calculate //계산 값
   
+  let copys = JSON.parse(JSON.stringify(carDatas))
+  let datas = getDatas(copys, String(carName))
   //모델과 해당되는 객체만 가져오기
-  let datas = getDatas(carDatas, String(carName))
+  
   data_rep = datas[0]
   data_subModels = datas[1]
   car = datas[2]
@@ -117,11 +119,12 @@ function makeResult(carName, input_value, f){
     calculate = f(input_value, data_rep.mileage, oilValue[1].PRICE)
   } else if(data_rep.fuel == 'LPi'){      
     calculate = f(input_value, data_rep.mileage, oilValue[2].PRICE)           
-  }   
+  }
+  
   data_rep["res"] = calculate  
-  data_rep["carName"]=car
-  delete data_rep["mileage"]  
-          
+  data_rep["carName"] = car
+  delete data_rep["mileage"] 
+  
   for(let t=0; t<data_subModels.length; t++){ //각 연식 모델들에 대해 계산
     let model = data_subModels[t]
     for(let key in model.fuel){ //해당 연식의 주종에 대해 계산
@@ -146,7 +149,7 @@ function makeResult(carName, input_value, f){
       }
     }
   }
-  
+  const carDatas2 = require('../data/cars.js')    
   return [data_rep, data_subModels]
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -270,7 +273,6 @@ function liter_distanceWhat(carName, input_value){
    
   result = makeResult(carName, input_value, f)
   
-  console.log(result)
   return {    
     data_rep : result[0],
     data_subModels : result[1]
@@ -283,8 +285,7 @@ function distance_moneyWhat(carName, input_value){
   var result
    
   result = makeResult(carName, input_value, f)
-  
-  console.log(result)
+    
   return {    
     data_rep : result[0],
     data_subModels : result[1]
@@ -298,7 +299,6 @@ function distance_literWhat(carName, input_value){
    
   result = makeResult(carName, input_value, f)
   
-  console.log(result)
   return {    
     data_rep : result[0],
     data_subModels : result[1]
