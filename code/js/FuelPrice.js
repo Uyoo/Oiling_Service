@@ -27,21 +27,21 @@ module.exports.function = function fuelPrice (fuel) {
       data = getOilApi()[0]
       result["fuel"] = fuel_
       result["price"] = data.PRICE
-      result["fuelKorean"]= "가솔린"
+      result["fuelKorean"]= "휘발유"
       break
       
     case "diesel":
       data = getOilApi()[1]
       result["fuel"] = fuel_
       result["price"] = data.PRICE
-      result["fuelKorean"]= "디젤"
+      result["fuelKorean"]= "경유"
       break
     
     case "LPi":
       data = getOilApi()[2]
       result["fuel"] = fuel_
       result["price"] = data.PRICE
-      result["fuelKorean"]= "LPi"
+      result["fuelKorean"]= "LPG"
       break
       
     default:

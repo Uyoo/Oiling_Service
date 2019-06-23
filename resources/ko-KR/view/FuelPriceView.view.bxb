@@ -1,0 +1,31 @@
+// 결과 화면에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  match: CurrentFuelPrice (this) {
+    min (Required) max (One)
+  }
+
+  message {
+    template ("#{value(this.fuelKorean)}의 현재 기름값 정보입니다.")
+  }
+
+  render {
+    layout {
+      section {
+        content {            
+          title-area {
+            halign (Center)
+            slot1 {
+              text {              
+                value {                
+                  template ("약 #{value(this.price)}원 입니다.")
+                }
+                style (Title_M)
+              }
+            }
+          }          
+                             
+        }
+      }
+    }
+  }     
+}
