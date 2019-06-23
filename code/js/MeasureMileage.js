@@ -107,7 +107,6 @@ function makeResult(carName, input_value, f, choice){
   let copys = JSON.parse(JSON.stringify(carDatas))
   let datas = getDatas(copys, String(carName))
   //모델과 해당되는 객체만 가져오기
-  
   data_rep = datas[0]
   data_subModels = datas[1]
   car = datas[2]
@@ -174,7 +173,9 @@ function makeResult(carName, input_value, f, choice){
       }
     }
   }
-    console.log(data_rep.res)
+  
+  console.log(data_rep.res)
+  
   return {
     data_rep: data_rep, 
     data_subModels: data_subModels
@@ -284,7 +285,6 @@ function won_distanceWhat(carName, input_value){
   const f = (a, b, c) => a * b / c
   let choice = "distance"
   let result
-  
   
   result = makeResult(carName, input_value, f, choice)
   console.log(result)

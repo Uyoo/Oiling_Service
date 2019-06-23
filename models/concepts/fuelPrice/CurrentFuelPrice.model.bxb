@@ -1,0 +1,17 @@
+structure (CurrentFuelPrice) {
+  description (연료[가솔린, 경유, LPi]의 현재 기름 가격 정보)
+  property (fuel) {
+    type (Fuel)
+    min (Required) max (One)
+  }
+  
+  property (price) {
+    type (Price)
+    min (Required) max (One)
+  }
+  
+  property (fuelKorean) {
+    type (FuelKorean)
+    min (Required) max (One)
+  }
+}

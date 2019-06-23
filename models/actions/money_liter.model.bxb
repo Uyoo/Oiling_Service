@@ -1,4 +1,5 @@
 action (money_liter) {
+  type(Calculation)
   description (리터와 가격에 대한 기름 정보를 알려줍니다.)
   collect {
     input (fuel) {

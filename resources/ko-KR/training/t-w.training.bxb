@@ -1,5 +1,0 @@
-train (t-wi21zm8jdw2cbpj1jl5ql6243) {
-  utterance ("[g:Result_moneyLiter] (휘발유)[v:Fuel:gasoline] (3)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 얼마야?")
-  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
-  last-modified (1561274111015)
-}

@@ -1,0 +1,3 @@
+decimal (Price) {
+  description (연료[가솔린, 경유, LPi]의 현재 기름 가격을 제공합니다.)
+}

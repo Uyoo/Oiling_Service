@@ -1,5 +1,0 @@
-train (t-u0yivd8g3wx81jbuxfat7yze4) {
-  utterance ("[g:Result_All] (아반떼)[v:CarName]로 (여기서)[v:InputUnit:place] (서현역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (몇리터)[v:Question:liter_what] 넣어야돼?")
-  plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
-  last-modified (1561267091938)
-}

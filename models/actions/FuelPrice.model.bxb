@@ -1,0 +1,12 @@
+action (FuelPrice) {
+  type(Calculation)
+  description (현재 [가솔린, 경유, LPi] 기름값 제공)
+  collect {
+    //연료[가솔린, 경유, LPi]
+    input (fuel) {
+      type (Fuel)
+      min (Required) max (One)
+    }    
+  }
+  output (CurrentFuelPrice)
+}
