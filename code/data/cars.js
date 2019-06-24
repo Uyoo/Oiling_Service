@@ -675,7 +675,7 @@ module.exports =[
       engine: 1.4,
       mileage: 13.4,
       year: 2017,
-      imageUrl: " https://imgauto-phinf.pstatic.net/20170529_155/auto_1496046801496CwCcO_PNG/20170529173251_q5yVtLX2.png?type=f508_367"
+      imageUrl: "https://imgauto-phinf.pstatic.net/20170529_155/auto_1496046801496CwCcO_PNG/20170529173251_q5yVtLX2.png?type=f508_367"
     },    
     modelYear: [
       //[0]: 2017

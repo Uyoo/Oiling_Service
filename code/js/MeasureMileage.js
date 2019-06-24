@@ -86,6 +86,12 @@ function getOilApi(){
 
 function getDatas(carDatas, name){
   for(let i=0; i<carDatas.length; i++){
+    if(name == "소나타"){
+      name = "쏘나타"
+    }
+    if(name == "소렌토"){
+      name = "쏘렌토"
+    }
     if(carDatas[i].carName == name.toLowerCase()){
       return [carDatas[i].represent, carDatas[i].modelYear, name]
     }
