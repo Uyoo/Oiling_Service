@@ -1,7 +1,7 @@
 train (t-53fthlnnynizr1046j05uhwqt) {
-  utterance ("[g:Result_All] (k7)[v:CarName]에 (35000)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
-  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
-  last-modified (1561341941090)
+  utterance ("[g:Result_All] (k7)[v:CarName]에 (7만)[v:Man] (3500)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (dY47DsJADESH/xko+BTUuUNElSJIIEEbWcgKlrybaL0L1yfQkGLxNDN6rzBW2D9eZOKKTlR82xiHp9y5uLAljU2pikPecEyWAteiTC1jk7eOFE7kGLs8rnyf4tVL/PfHV7iRJsY6b9Tksc2jc2KL0nksMcEUM8yxGDqG9cv4PmzkvQE=)
+  last-modified (1561360067042)
 }
 train (t-5xf2gswzeakmrrkm1d75dc260) {
   utterance ("[g:Result_All] (스포티지)[v:CarName]로 (강릉시청)[v:StartPlace](에서)[v:InputUnit:place] (충주시청)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")

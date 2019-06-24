@@ -1,3 +1,13 @@
+train (t-h0lldnbsgrctkx161mngrp55x) {
+  utterance ("[g:hwasim.oiling_service.CurrentFuelPrice] (경유)[v:hwasim.oiling_service.Fuel:diesel] 얼마야?")
+  plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
+  last-modified (1561359552547)
+}
+train (t-h5kku2vu0de230cdq8g73lp3o) {
+  utterance ("[g:CurrentFuelPrice] 현재 (LPG)[v:Fuel:LPi] 가격 얼마야?")
+  plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
+  last-modified (1561359689762)
+}
 train (t-hio7h45wt5tvzq520ii9jaotw) {
   utterance ("[g:Result_All] (k5)[v:CarName]로 (120)[v:InputValue](킬로미터)[v:InputUnit:distance] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)

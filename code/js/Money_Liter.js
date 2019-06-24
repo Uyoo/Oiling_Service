@@ -17,7 +17,7 @@ function getOilApi(){
   return oilValue
 }
 
-module.exports.function = function money_Liter (inputUnit, inputValue, fuel) {
+module.exports.function = function money_Liter (inputUnit, inputValue, fuel, man) {
   var unit
   var price = getOilApi()
   var result ={}
@@ -39,11 +39,18 @@ module.exports.function = function money_Liter (inputUnit, inputValue, fuel) {
     price = Math.round(inputValue * price)
     unit = "원"
   }else if(inputUnit == "won"){
+    if(!inputValue){
+      inputValue = 0;
+    }    
+    if(man){
+      man = man.substring(0, man.length-1)
+      man = Number(man)    
+      inputValue = inputValue + (man*10000)
+    }
+    
     price = Math.round((inputValue / price)*10)/10
     unit = "ℓ"
   }
-  
-  
   
   result["ans"] = price + unit
   console.log(result)

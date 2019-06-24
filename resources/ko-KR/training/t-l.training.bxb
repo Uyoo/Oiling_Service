@@ -1,3 +1,13 @@
+train (t-l1eau8eg1io679gxqxrbtcef0) {
+  utterance ("[g:Result_moneyLiter] (가솔린)[v:Fuel:gasoline] (15)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 얼마야?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561358723011)
+}
+train (t-l2utelu1el3buhkzu4ppjcn5o) {
+  utterance ("[g:CurrentFuelPrice] 현재 (경유)[v:Fuel:diesel] 가격 얼마야?")
+  plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
+  last-modified (1561359546258)
+}
 train (t-la3zdgxx4irqs55gui4ckju12) {
   utterance ("[g:Result_All] (모닝)[v:CarName]으로 (여기서)[v:InputUnit:place] (롯데월드)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)

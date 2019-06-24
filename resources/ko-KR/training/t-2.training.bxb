@@ -1,7 +1,12 @@
 train (t-223qtvlsxtkq7idy3ompmx0d1) {
-  utterance ("[g:Result_All] (모닝)[v:CarName]에 (40000)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
-  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
-  last-modified (1561346277971)
+  utterance ("[g:Result_All] (모닝)[v:CarName]에 (3만)[v:Man] (4000)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (dY47DsJADESH/xko+BTUuUNElSJIIEEbWcgKlrybaL0L1yfQkGLxNDN6rzBW2D9eZOKKTlR82xiHp9y5uLAljU2pikPecEyWAteiTC1jk7eOFE7kGLs8rnyf4tVL/PfHV7iRJsY6b9Tksc2jc2KL0nksMcEUM8yxGDqG9cv4PmzkvQE=)
+  last-modified (1561359985801)
+}
+train (t-29ljskpnmu0jjpqcct0h75pxh) {
+  utterance ("[g:CurrentFuelPrice] 현재 (휘발유)[v:Fuel:gasoline] 얼마야?")
+  plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
+  last-modified (1561359395209)
 }
 train (t-29pxxxw029ucnlsb24xo710z7) {
   utterance ("[g:Result_All] (싼타페)[v:CarName]로 (신촌역)[v:StartPlace](에서)[v:InputUnit:place] (불국사)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")

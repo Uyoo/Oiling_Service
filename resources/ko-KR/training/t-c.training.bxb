@@ -1,7 +1,7 @@
 train (t-ccnbt0mg11r6r0blgqsbaw01r) {
   utterance ("[g:Result_All] (레이)[v:CarName]에 (7500)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
-  last-modified (1561356721231)
+  last-modified (1561358991506)
 }
 train (t-cgmm69reeqq7yfegr09nt02pm) {
   utterance ("[g:Result_All] (K7)[v:CarName]으로 (경복궁역)[v:StartPlace](에서)[v:InputUnit:place] (신설동역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 필요해??")

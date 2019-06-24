@@ -18,6 +18,11 @@ train (t-69yl3ruhv8x8khlsuid4u3fnw) {
   plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
   last-modified (1561297115158)
 }
+train (t-6u7kfs6fgxcnt6o4fode76d7e) {
+  utterance ("[g:Result_moneyLiter] (8000)[v:InputValue](원)[v:InputUnit:won]으로 (휘발유)[v:Fuel:gasoline] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561358634347)
+}
 train (t-6ujpkof81efwnr61wiex63q4o) {
   utterance ("[g:Result_All] (쏘렌토)[v:CarName]로 (여기서)[v:InputUnit:place] (속초해수욕장)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)

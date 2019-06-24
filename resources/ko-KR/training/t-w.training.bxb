@@ -1,3 +1,13 @@
+train (t-w4fhb85jdykfzxb9sd1kz9qxp) {
+  utterance ("[g:Result_All] (아반떼)[v:CarName]로 (문정역)[v:StartPlace](에서)[v:InputUnit:place] (건대입구역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561359201258)
+}
+train (t-why0954crko2vejew9bnsqrlg) {
+  utterance ("[g:CurrentFuelPrice] (LPG)[v:Fuel:LPi] 얼마야?")
+  plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
+  last-modified (1561359689042)
+}
 train (t-wp7wjyqkt8vmkcu7b4gac5ljb) {
   utterance ("[g:Result_All] (싼타페)[v:CarName]로 (37)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)

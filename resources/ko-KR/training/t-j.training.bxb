@@ -1,10 +1,15 @@
 train (t-jf0tz4l5z67hhwf1t20ddocoo) {
-  utterance ("[g:Result_All] (그랜저)[v:CarName]에 (20000)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
-  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
-  last-modified (1561345534684)
+  utterance ("[g:Result_All] (그랜저)[v:CarName]에 (1만)[v:Man](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (bYo7DsJADESH7x1S8CmocweUiiKRQKKOLGQFS14HrXfh+oQCaHamGc17WGN/f5FLqEdRsaF3jk+5cX1hz5r6oyoOZSMweY7cijINjE3Zaih2FBi7Mj7ZI6erSUJVFloybMvonNmTjIYVZphjgeW0MO1v//n8P+MN)
+  last-modified (1561360303035)
 }
 train (t-jtwy7o50d9s03gvlnr3hjenaj) {
   utterance ("[g:Result_All] (쏘렌토)[v:CarName]로 (37)[v:InputValue](키로)[v:InputUnit:distance] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561347825480)
+}
+train (t-jzuvbk0pdgnyw6rd64khollxi) {
+  utterance ("[g:Result_moneyLiter] (휘발유)[v:Fuel:gasoline] (3)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 얼마야?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561359362193)
 }

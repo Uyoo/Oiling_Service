@@ -1,7 +1,7 @@
 endpoints {
   action-endpoints {
     action-endpoint (money_liter) {
-      accepted-inputs (inputUnit, inputValue, fuel)
+      accepted-inputs (inputUnit, inputValue, fuel, man)
       local-endpoint (js/Money_Liter.js)
     }
   }

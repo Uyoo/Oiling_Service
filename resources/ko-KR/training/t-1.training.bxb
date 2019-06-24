@@ -1,7 +1,12 @@
 train (t-1i69flk46jmnecyidu5lljmcx) {
-  utterance ("[g:Result_All] (쏘렌토)[v:CarName]에 (54000)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
-  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
-  last-modified (1561347788464)
+  utterance ("[g:Result_All] (쏘렌토)[v:CarName]에 (5만)[v:Man](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (bYo7DsJADESH7x1S8CmocweUiiKRQKKOLGQFS14HrXfh+oQCaHamGc17WGN/f5FLqEdRsaF3jk+5cX1hz5r6oyoOZSMweY7cijINjE3Zaih2FBi7Mj7ZI6erSUJVFloybMvonNmTjIYVZphjgeW0MO1v//n8P+MN)
+  last-modified (1561359956113)
+}
+train (t-1jb29lj2qqiqrmfjmk4rg2nun) {
+  utterance ("[g:hwasim.oiling_service.CurrentFuelPrice] (휘발유)[v:hwasim.oiling_service.Fuel:gasoline] 얼마야?")
+  plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
+  last-modified (1561359453394)
 }
 train (t-1yqit67kg4vk2l2miaq870tbl) {
   utterance ("[g:Result_All] (스포티지)[v:CarName]로 (여기서)[v:InputUnit:place] (설악산입구)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
