@@ -15,12 +15,7 @@ action (measureMileage) {
     //   min (Optional) max (One)
     // }
     
-    //00(value)원, 리터, km(unit)
-    input (man){
-      type (Man)
-      min (Optional) max (One)
-    }
-    
+    //00(value)원, 리터, km(unit)    
     input (inputValue){
       type (InputValue)
       min (Optional) max (One)

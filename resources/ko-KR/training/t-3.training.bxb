@@ -4,9 +4,9 @@ train (t-30r1d5loxal9edqmidsxqzjpr) {
   last-modified (1561359426433)
 }
 train (t-3dm509yocp62ytrliu8k4b4h3) {
-  utterance ("[g:Result_All] (k5)[v:CarName]에 (2만)[v:Man](원)[v:InputUnit:won] 넣으면 몇 (킬로)[v:Question:distance_what] 갈 수 있어?")
-  plan (bYo7DsJADESH7x1S8CmocweUiiKRQKKOLGQFS14HrXfh+oQCaHamGc17WGN/f5FLqEdRsaF3jk+5cX1hz5r6oyoOZSMweY7cijINjE3Zaih2FBi7Mj7ZI6erSUJVFloybMvonNmTjIYVZphjgeW0MO1v//n8P+MN)
-  last-modified (1561360038769)
+  utterance ("[g:Result_All] (k5)[v:CarName]에 (2만)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (킬로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561365189753)
 }
 train (t-3tmqoz2t80sarbng8hca5wpev) {
   utterance ("[g:Result_All] (엑센트)[v:CarName]로 (신촌역)[v:StartPlace](에서)[v:InputUnit:place] (불국사)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")

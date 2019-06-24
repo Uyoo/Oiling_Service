@@ -1,3 +1,8 @@
+train (t-qkaxlv9q1lyyrofab7qhq8giw) {
+  utterance ("[g:Result_All] (K7)[v:CarName]에 (천)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (킬로미터)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561365580695)
+}
 train (t-qkeolrosc9qfjm677ys8dqkw8) {
   utterance ("[g:Result_All] (모닝)[v:CarName]으로 (문정역)[v:StartPlace](에서)[v:InputUnit:place] (건대입구역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
@@ -9,14 +14,14 @@ train (t-qmhgr0mixz6tt8b3xtz0ki26d) {
   last-modified (1561348010926)
 }
 train (t-qmtvkjwqbpx15atxkook0kom9) {
-  utterance ("[g:Result_All] (스포티지)[v:CarName]에 (1만)[v:Man](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
-  plan (bYo7DsJADESH7x1S8CmocweUiiKRQKKOLGQFS14HrXfh+oQCaHamGc17WGN/f5FLqEdRsaF3jk+5cX1hz5r6oyoOZSMweY7cijINjE3Zaih2FBi7Mj7ZI6erSUJVFloybMvonNmTjIYVZphjgeW0MO1v//n8P+MN)
-  last-modified (1561360402848)
+  utterance ("[g:Result_All] (스포티지)[v:CarName]에 (1만)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561365492476)
 }
 train (t-qp5zs7mmcs809ll4pst2kgvo7) {
-  utterance ("[g:Result_All] (그랜저)[v:CarName] (5만)[v:Man](원)[v:InputUnit:won]이면 (몇 킬로미터)[v:Question:distance_what] 갈 수 있어")
-  plan (bYo7DsJADESH7x1S8CmocweUiiKRQKKOLGQFS14HrXfh+oQCaHamGc17WGN/f5FLqEdRsaF3jk+5cX1hz5r6oyoOZSMweY7cijINjE3Zaih2FBi7Mj7ZI6erSUJVFloybMvonNmTjIYVZphjgeW0MO1v//n8P+MN)
-  last-modified (1561360419641)
+  utterance ("[g:Result_All] (그랜저)[v:CarName] (5만)[v:InputValue](원)[v:InputUnit:won]이면 (몇 킬로미터)[v:Question:distance_what] 갈 수 있어")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561365495486)
 }
 train (t-qv98ksrhp3ypbdumun2i2fnn8) {
   utterance ("[g:Result_All] (k7)[v:CarName]에 (62)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (킬로미터)[v:Question:distance_what] 갈 수 있어?")

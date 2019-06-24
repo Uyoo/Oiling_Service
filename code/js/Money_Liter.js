@@ -17,7 +17,7 @@ function getOilApi(){
   return oilValue
 }
 
-module.exports.function = function money_Liter (inputUnit, inputValue, fuel, man) {
+module.exports.function = function money_Liter (inputUnit, inputValue, fuel) {
   var unit
   var price = getOilApi()
   var result ={}
@@ -36,17 +36,23 @@ module.exports.function = function money_Liter (inputUnit, inputValue, fuel, man
   }  
   
   if(inputUnit == "liter"){
+    inputValue = Number(inputValue)
     price = Math.round(inputValue * price)
     unit = "원"
-  }else if(inputUnit == "won"){
-    if(!inputValue){
-      inputValue = 0;
-    }    
-    if(man){
-      man = man.substring(0, man.length-1)
-      man = Number(man)    
-      inputValue = inputValue + (man*10000)
-    }
+  }else if(inputUnit == "won"){    
+    
+    if(inputValue.substring(0, 1) == "만"){
+      inputValue = 10000
+    }else if(inputValue.substring(0, 1) == "천"){
+      inputValue = 1000
+    }else{
+      inputValue = inputValue.split("만")
+      if(inputValue.length == 2){
+        inputValue = (Number(inputValue[0])*10000) + Number(inputValue[1].substring(1, inputValue[1].length))
+      }else{
+        inputValue = Number(inputValue)
+      }
+   }
     
     price = Math.round((inputValue / price)*10)/10
     unit = "ℓ"

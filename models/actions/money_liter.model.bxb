@@ -14,10 +14,6 @@ action (money_liter) {
       type (InputUnit)
       min (Optional) max (One)
     }
-    input (man) {
-      type (Man)
-      min (Optional) max (One)
-    }
   }
   output (Result_moneyLiter)
 }

@@ -1,7 +1,7 @@
 endpoints {
   action-endpoints {
     action-endpoint (measureMileage) {
-      accepted-inputs (carName, inputValue, inputUnit, question, startPlace, startPlaceMyPos, endPlace, endPlaceUnit, man)//fuel
+      accepted-inputs (carName, inputValue, inputUnit, question, startPlace, startPlaceMyPos, endPlace, endPlaceUnit)//fuel
       local-endpoint (js/MeasureMileage.js)
     }    
   }

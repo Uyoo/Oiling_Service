@@ -1,7 +1,7 @@
 train (t-vfl5oo3vp8qnyl0wfc7ynv24u) {
-  utterance ("[g:Result_moneyLiter] (3만)[v:Man](원)[v:InputUnit:won]으로 (경유)[v:Fuel:diesel] 얼마나 넣을 수 있어?")
-  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMktgV+CbmMbAwMDIwMTADaQYgCwJhACQGlQMA)
-  last-modified (1561360477816)
+  utterance ("[g:Result_moneyLiter] (3만)[v:InputValue](원)[v:InputUnit:won]으로 (경유)[v:Fuel:diesel] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561365546582)
 }
 train (t-vgib4huc86c4am8g3g1m3zx9i) {
   utterance ("[g:Result_All] (K3)[v:CarName]로 (신촌역)[v:StartPlace](에서)[v:InputUnit:place] (삼성역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]야?")

@@ -14,9 +14,9 @@ train (t-7bmg0f3wo2h0510ogv0niidkj) {
   last-modified (1561343707174)
 }
 train (t-7kj42xuy0cglxtlj631o3oo21) {
-  utterance ("[g:Result_moneyLiter] (10만)[v:Man](원)[v:InputUnit:won]으로 (LPG)[v:Fuel:LPi] 얼마나 넣을 수 있어?")
-  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMktgV+CbmMbAwMDIwMTADaQYgCwJhACQGlQMA)
-  last-modified (1561358587611)
+  utterance ("[g:Result_moneyLiter] (10만)[v:InputValue](원)[v:InputUnit:won]으로 (LPG)[v:Fuel:LPi] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561365265902)
 }
 train (t-7os6gz1atiizm28o4mw5b0c9m) {
   utterance ("[g:Result_All] (쏘렌토)[v:CarName]로 (모란역)[v:StartPlace](에서)[v:InputUnit:place] (인천공항)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")

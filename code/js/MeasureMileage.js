@@ -92,6 +92,9 @@ function getDatas(carDatas, name){
     if(name == "소렌토"){
       name = "쏘렌토"
     }
+    if(name == "그랜져"){
+      name = "그랜저"
+    }
     if(carDatas[i].carName == name.toLowerCase()){
       return [carDatas[i].represent, carDatas[i].modelYear, name]
     }
@@ -156,7 +159,6 @@ function makeResult(carName, input_value, f, choice){
       return "LPi"  
     }
   } 
-
   
   calculate = distinChoice(calculate, choice)
     
@@ -200,18 +202,22 @@ function makeResult(carName, input_value, f, choice){
 }
 
 //00원으로 몇 km 갈 수 있어? -> return 거리
-function won_distanceWhat(carName, input_value, man){
+function won_distanceWhat(carName, input_value){
   const f = (a, b, c) => a * b / c
   let choice = "distance"
   let result
   
-  if(man){
-    man = man.substring(0, man.length-1)
-    man = Number(man)
-    if(!input_value){
-      input_value = 0;
+  if(input_value.substring(0, 1) == "만"){
+    input_value = 10000
+  }else if(input_value.substring(0, 1) == "천"){
+    input_value = 1000
+  }else{
+    input_value = input_value.split("만")
+    if(input_value.length == 2){
+      input_value = (Number(input_value[0])*10000) + Number(input_value[1].substring(1, input_value[1].length))
+    }else{
+      input_value = Number(input_value)
     }
-    input_value = input_value + (man*10000)
   }
   
   result = makeResult(carName, input_value, f, choice)
@@ -224,10 +230,11 @@ function won_distanceWhat(carName, input_value, man){
 //00리터로 몇 km 갈 수 있어? -> return 거리
 //연비 x 리터 = KM
 function liter_distanceWhat(carName, input_value){    
+  input_value = Number(input_value)
   const f = (a, b, c) => a * b
   let choice = "distance"
   var result
-    
+  
   result = makeResult(carName, input_value, f, choice)
   
   console.log(result)
@@ -236,6 +243,7 @@ function liter_distanceWhat(carName, input_value){
 // ======= inputUnit이 거리(distance)인 경우 =======
 //00km면 기름값 얼마야? -> return 기름값
 function distance_moneyWhat(carName, input_value){
+  input_value = Number(input_value)
   const f = (a, b, c) => a / b * c
   let choice = "money"
   var result
@@ -247,7 +255,8 @@ function distance_moneyWhat(carName, input_value){
 }
 
 //00km면 몇 리터 채워야돼? -> return 리터 아반떼 30킬로면 몇리터  (리터=KM/연비)
-function distance_literWhat(carName, input_value){    
+function distance_literWhat(carName, input_value){  
+  input_value = Number(input_value)
   const f = (a, b, c) => a / b
   let choice = "liter"
   var result
@@ -259,7 +268,7 @@ function distance_literWhat(carName, input_value){
 }
 
 module.exports.function = function measureMileage (carName, inputValue, inputUnit, question, 
-                                                    startPlace, startPlaceMyPos, endPlace, endPlaceUnit, man) {
+                                                    startPlace, startPlaceMyPos, endPlace, endPlaceUnit) {
   let console = require('console')  
   let result = ''
   
@@ -267,7 +276,7 @@ module.exports.function = function measureMileage (carName, inputValue, inputUni
   switch (input_unit) {    
     case 'won':
       //몇 km로 갈 수 있는지      
-      result = won_distanceWhat(carName, inputValue, man)
+      result = won_distanceWhat(carName, inputValue)
       break;     
     case 'liter':
       //몇 km로 갈 수 있는지
