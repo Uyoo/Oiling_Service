@@ -668,7 +668,7 @@ module.exports =[
     ]        
   },
   { 
-    carName: "액센트",        
+    carName: "엑센트",        
     represent :
     {
       fuel: 'gasoline',

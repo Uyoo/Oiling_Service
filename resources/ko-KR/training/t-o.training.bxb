@@ -1,5 +1,40 @@
+train (t-oaiv5lwg1p76e9kyykxvdlt3f) {
+  utterance ("[g:Result_All] (레이)[v:CarName]로 (51500)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561295780183)
+}
 train (t-oh1wsqy8iu3asbw5gv37vlbw9) {
   utterance ("[g:Result_All] (아반떼)[v:CarName]로 (서현역)[v:StartPlace](에서)[v:InputUnit:place] (시흥)[v:EndPlace](까지)[v:EndPlaceUnit] 기름값 (얼마)[v:Question:money_what]야?")
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561267569722)
+}
+train (t-ojbxkzgz8mv0ke3quwi4bdvm1) {
+  utterance ("[g:Result_All] (레이)[v:CarName]로 (불국사)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561297627692)
+}
+train (t-ojfrc2q3iw0nhyoq6c5fgki3k) {
+  utterance ("[g:Result_All] (쏘나타)[v:CarName]로 (고속터미널역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561345346214)
+}
+train (t-om8c9oew3xmk9211jkfxljz98) {
+  utterance ("[g:Result_All] (K5)[v:CarName]로 (영등포구청역)[v:StartPlace](에서)[v:InputUnit:place] (광명역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 필요해??")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561343286273)
+}
+train (t-omc60eu2d9npg6kvbh5zn37k4) {
+  utterance ("[g:Result_All] (엑센트)[v:CarName]로 (50200)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561296269107)
+}
+train (t-ox3q4ctet5o31xvu23u1oqc6a) {
+  utterance ("[g:Result_All] (그랜저)[v:CarName]로 (인천역)[v:StartPlace](에서)[v:InputUnit:place] (인천공항)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561346188012)
+}
+train (t-oy0ivkpns0iz5hi43tuqyy66j) {
+  utterance ("[g:Result_All] (그랜저)[v:CarName]로 (여기서)[v:InputUnit:place] (속초해수욕장)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
+  last-modified (1561345680211)
 }

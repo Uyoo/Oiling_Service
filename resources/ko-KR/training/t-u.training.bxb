@@ -3,3 +3,18 @@ train (t-u0yivd8g3wx81jbuxfat7yze4) {
   plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
   last-modified (1561267091938)
 }
+train (t-ugg50d6rm4e2rw1mvgkjf7fjg) {
+  utterance ("[g:Result_All] (레이)[v:CarName]로 (15)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561295755727)
+}
+train (t-umf3y78nszgz2u62pj5gwe2vm) {
+  utterance ("[g:Result_All] (쏘나타)[v:CarName]에 (46000)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561345011126)
+}
+train (t-uv31g64a3lgmsxampk3k0jyt8) {
+  utterance ("[g:Result_All] (K5)[v:CarName]로 (시흥시청)[v:StartPlace](에서)[v:InputUnit:place] (사당역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]야?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561343371650)
+}

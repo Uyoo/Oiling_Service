@@ -1,5 +1,20 @@
+train (t-r4z52t4681fkzkrooexvk0tro) {
+  utterance ("[g:Result_All] (싼타페)[v:CarName]로 (신촌역)[v:StartPlace](에서)[v:InputUnit:place] (불국사)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561297235228)
+}
 train (t-r76wa152uea3hfrl6f08xypm5) {
   utterance ("[g:Result_All] (아반떼)[v:CarName]로 (홍대입구역)[v:StartPlace](에서)[v:InputUnit:place] (신촌역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 (몇 리터)[v:Question:liter_what] 넣어야해?")
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561268754272)
+}
+train (t-r8zl73s9ol7ga1f92cmhc5vm5) {
+  utterance ("[g:Result_All] (K3)[v:CarName]로 (여기서)[v:InputUnit:place] (광화문역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 필요해?")
+  plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
+  last-modified (1561343661096)
+}
+train (t-rz9fd0m295repq8h1flqpnbya) {
+  utterance ("[g:Result_All] (레이)[v:CarName]로 (불국사)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561297656676)
 }

@@ -1,0 +1,25 @@
+train (t-223qtvlsxtkq7idy3ompmx0d1) {
+  utterance ("[g:Result_All] (모닝)[v:CarName]에 (40000)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561346277971)
+}
+train (t-29pxxxw029ucnlsb24xo710z7) {
+  utterance ("[g:Result_All] (싼타페)[v:CarName]로 (신촌역)[v:StartPlace](에서)[v:InputUnit:place] (불국사)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561297198609)
+}
+train (t-2j2atyreo769z3atn4veehmse) {
+  utterance ("[g:Result_All] (모닝)[v:CarName]에 (15)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561346479819)
+}
+train (t-2mbm27p55i56g62payuq9qc2l) {
+  utterance ("[g:Result_All] (쏘렌토)[v:CarName]로 (여기서)[v:InputUnit:place] (지리산입구)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
+  last-modified (1561348111632)
+}
+train (t-2z1gjp7y4qhrc18fgqrzycc14) {
+  utterance ("[g:Result_All] (모닝)[v:CarName]으로 (문정래미안아파트)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561346726914)
+}

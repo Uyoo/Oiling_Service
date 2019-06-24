@@ -1,0 +1,20 @@
+train (t-cgmm69reeqq7yfegr09nt02pm) {
+  utterance ("[g:Result_All] (K7)[v:CarName]으로 (경복궁역)[v:StartPlace](에서)[v:InputUnit:place] (신설동역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 필요해??")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561343002370)
+}
+train (t-criy2w6b89ip4xkd4jojh1vtg) {
+  utterance ("[g:Result_All] (모닝)[v:CarName]으로 (17)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561346431242)
+}
+train (t-cvldyml98bbujw2xrebwjlsob) {
+  utterance ("[g:Result_All] (아반떼)[v:CarName]로 (여기서)[v:InputUnit:place] (잠실롯데백화점)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
+  last-modified (1561344679294)
+}
+train (t-cxzp0xpwdsct9y4mvryf40kk1) {
+  utterance ("[g:Result_All] (스포티지)[v:CarName]로 (15)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561347052836)
+}

@@ -1,7 +1,27 @@
+train (t-i0cp4m9oodqbddugb0z38096r) {
+  utterance ("[g:Result_All] (싼타페)[v:CarName]로 (여기서)[v:InputUnit:place] (신촌역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
+  last-modified (1561297021526)
+}
 train (t-i36jqs8e4wru5pyu8ow4dzwez) {
   utterance ("[g:Result_moneyLiter] (휘발유)[v:Fuel:gasoline] (3)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 얼마야?")
   plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
   last-modified (1561279565407)
+}
+train (t-iesl1xv1auepj7s8v7nbb950g) {
+  utterance ("[g:Result_All] (엑센트)[v:CarName]로 (불국사)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561296696854)
+}
+train (t-ifwl365n2izixk1ge2r9p5ner) {
+  utterance ("[g:Result_All] (아반떼)[v:CarName]에 (15)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (킬로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561349976533)
+}
+train (t-ipa3hsbc3vydjepm4798sz1e9) {
+  utterance ("[g:Result_All] (쏘나타)[v:CarName]로 (13)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561345167816)
 }
 train (t-iu8dslxc90rfttd0qnpxzw9cf) {
   utterance ("[g:Result_All] (아반떼)[v:CarName]로 (30)[v:InputValue](리터)[v:InputUnit:liter]면 (몇 킬로미터)[v:Question:distance_what] 갈 수 있어")

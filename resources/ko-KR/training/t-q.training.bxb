@@ -1,5 +1,30 @@
+train (t-qkeolrosc9qfjm677ys8dqkw8) {
+  utterance ("[g:Result_All] (모닝)[v:CarName]으로 (문정역)[v:StartPlace](에서)[v:InputUnit:place] (건대입구역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561346823210)
+}
+train (t-qmhgr0mixz6tt8b3xtz0ki26d) {
+  utterance ("[g:Result_All] (쏘렌토)[v:CarName]에 (15)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (킬로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561348010926)
+}
+train (t-qmtvkjwqbpx15atxkook0kom9) {
+  utterance ("[g:Result_All] (스포티지)[v:CarName]에 (50000)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561346877356)
+}
 train (t-qp5zs7mmcs809ll4pst2kgvo7) {
   utterance ("[g:Result_All] (그랜저)[v:CarName] (50000)[v:InputValue](원)[v:InputUnit:won]이면 (몇 킬로미터)[v:Question:distance_what] 갈 수 있어")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561256950643)
+}
+train (t-qv98ksrhp3ypbdumun2i2fnn8) {
+  utterance ("[g:Result_All] (k7)[v:CarName]에 (62)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (킬로미터)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561342148062)
+}
+train (t-qwea8zcuynk35fzd6ao85bup2) {
+  utterance ("[g:Result_All] (스포티지)[v:CarName]로 (여기서)[v:InputUnit:place] (송파구청)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
+  last-modified (1561347138095)
 }

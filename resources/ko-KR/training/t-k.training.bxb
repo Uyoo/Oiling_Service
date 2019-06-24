@@ -1,0 +1,15 @@
+train (t-k06mauxf62yospjx726v9hxd0) {
+  utterance ("[g:Result_All] (아반떼)[v:CarName]로 (11)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561344205705)
+}
+train (t-kk1nay6by6925ywzwfol0mnjb) {
+  utterance ("[g:Result_All] (k7)[v:CarName]으로 (132)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561342070458)
+}
+train (t-ku67t1a69p3zn7mh0x9f1q8tf) {
+  utterance ("[g:Result_All] (엑센트)[v:CarName]로 (37)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561296462262)
+}

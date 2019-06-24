@@ -1,0 +1,25 @@
+train (t-7141xroe3c0qavvfxyqal8qvl) {
+  utterance ("[g:Result_All] (모닝)[v:CarName]으로 (개롱역)[v:StartPlace](에서)[v:InputUnit:place] (잠실역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561346776827)
+}
+train (t-7a7allj35qs8ojyv4vya5nbm3) {
+  utterance ("[g:Result_All] (쏘나타)[v:CarName]로 (구일역)[v:StartPlace](에서)[v:InputUnit:place] (을왕리해수욕장)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561345476864)
+}
+train (t-7bmg0f3wo2h0510ogv0niidkj) {
+  utterance ("[g:Result_All] (K3)[v:CarName]로 (여기서)[v:InputUnit:place] (건대입구역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]야?")
+  plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
+  last-modified (1561343707174)
+}
+train (t-7os6gz1atiizm28o4mw5b0c9m) {
+  utterance ("[g:Result_All] (쏘렌토)[v:CarName]로 (모란역)[v:StartPlace](에서)[v:InputUnit:place] (인천공항)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561348346648)
+}
+train (t-7rplxjyu6d4ee7o0148auoum4) {
+  utterance ("[g:Result_All] (스포티지)[v:CarName]로 (37)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561347014922)
+}

@@ -86,7 +86,7 @@ function getOilApi(){
 
 function getDatas(carDatas, name){
   for(let i=0; i<carDatas.length; i++){
-    if(carDatas[i].carName == name){
+    if(carDatas[i].carName == name.toLowerCase()){
       return [carDatas[i].represent, carDatas[i].modelYear, name]
     }
   }
@@ -193,102 +193,7 @@ function makeResult(carName, input_value, f, choice){
   }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ======= inputUnit이 돈(won)인 경우 =======
-//00원으로 몇 리터 채울 수 있어? -> return 리터
-function won_literWhat(carName, input_value){
-  //기름 api에서 기름값 받아오기(가솔린, 디젤, 부탄(Lpi))
-  let oilValue = getOilApi()
-  
-  let won_literWhat = oilValue.map(item => {    
-    let calculate = 0       
-    let object = {      
-      fuel: '',
-      liter: ''
-    }
-    
-    if(item.PRODCD == 'B027'){            
-      calculate = input_value / item.PRICE
-      object.fuel = 'gasoline'
-      object.liter = calculate      
-      
-    } else if(item.PRODCD == 'D047'){     
-      calculate = input_value / item.PRICE 
-      object.fuel = 'diesel'
-      object.liter = calculate
-      
-    } else if(item.PRODCD == 'K015'){      
-      calculate = input_value / item.PRICE 
-      object.fuel = 'LPi'
-      object.liter = calculate
-    }    
-    
-    return object
-  })
-  console.log(won_literWhat)
-   
-  return 'won_literWhat'
-}
 
-//00리터면 기름값 얼마야? -> return 기름값
-//평균기름값 x B
-function liter_moneyWhat(carName, input_value){
-  //carName과 일치하는 연비 데이터를 불러오기 
-  const carDatas = require('../data/cars.js')
-  let fuels = []
-  
-  //모델과 해당되는 객체만 가져오기
-  for(let i=0; i<carDatas.length; i++){
-    if(carDatas[i].carName == String(carName)){ 
-      let data = carDatas[i]  //해당 자동차 정보 객체
-      for(let key in data){
-        if(key == 'fuel'){
-          fuels = data[key]          
-          break
-        }
-      }
-      break
-    }    
-  }  
-  console.log(fuels)
-    
-  //최근 전 주의 전국 평균 기름값 불러오기 인덱스 [0]: B034(일반 휘발유)[3]: D047(경유) [4]: K015(부탄, LPI)
-  let oilValue = getOilApi()
-    
-  //평균기름값x리터=KM
-  let liter_moneyWhat = []
-  let i = 0
-  for(let key in fuels){
-    
-    let calculate = 0
-    let object = {
-      fuel: '',
-      money: ''
-    }
-
-    if(key == 'gasoline' && oilValue[i].PRODCD == 'B027'){
-      calculate = input_value * oilValue[i].PRICE
-      object.fuel = key
-      object.money = calculate
-      i += 1
-      
-    } else if(key == 'diesel' && oilValue[i].PRODCD == 'D047'){      
-      calculate = input_value * oilValue[i].PRICE
-      object.fuel = key
-      object.money = calculate
-      i += 1
-      
-    } else if(key == 'LPi' && oilValue[i].PRODCD == 'K015'){      
-      calculate = input_value * oilValue[i].PRICE
-      object.fuel = key
-      object.money = calculate
-      i += 1      
-    }    
-  
-    liter_moneyWhat.push(object)      
-  }
-  console.log(liter_moneyWhat)
-  return ('money:')
-}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //00원으로 몇 km 갈 수 있어? -> return 거리
@@ -349,33 +254,17 @@ module.exports.function = function measureMileage (carName, inputValue, inputUni
   switch (input_unit) {    
     case 'won':
       //몇 km로 갈 수 있는지      
-      if(question == 'distance_what'){  
-        result = won_distanceWhat(carName, inputValue)
-      }
-
-      //몇 리터를 넣을 수 있는지
-      else if(question == 'liter_what'){        
-        result = won_literWhat(carName, inputValue)
-      }
-      break;
-      
+      result = won_distanceWhat(carName, inputValue)
+      break;     
     case 'liter':
       //몇 km로 갈 수 있는지
-      if(question == 'distance_what'){
-        result = liter_distanceWhat(carName, inputValue)
-      }
-
-      //기름값이 얼마인지
-      else if(question == 'money_what'){
-        result = liter_moneyWhat(carName, inputValue)        
-      }
+      result = liter_distanceWhat(carName, inputValue)
       break;
     case 'distance':
       //기름값이 얼마인지
       if(question == 'money_what'){
         result = distance_moneyWhat(carName, inputValue)
       }
-
       //몇 리터 채워야 하는지
       else if(question == 'liter_what'){
         result = distance_literWhat(carName, inputValue)
