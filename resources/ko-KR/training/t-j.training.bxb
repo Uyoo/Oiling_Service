@@ -3,6 +3,11 @@ train (t-jf0tz4l5z67hhwf1t20ddocoo) {
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561365386162)
 }
+train (t-jkbgmzj4910jdcn7g6ul7keka) {
+  utterance ("[g:Result_moneyLiter] (천)[v:InputValue](원)[v:InputUnit:won]으로 (LPG)[v:Fuel:LPi] 몇 리터 넣을 수 있어")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561372476156)
+}
 train (t-jtwy7o50d9s03gvlnr3hjenaj) {
   utterance ("[g:Result_All] (쏘렌토)[v:CarName]로 (37)[v:InputValue](키로)[v:InputUnit:distance] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)

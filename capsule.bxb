@@ -3,9 +3,15 @@ capsule {
   version (3.0.0)
   format (3)
   targets {
-    target (bixby-mobile-ko-KR)
-    target (bixby-mobile-en-US){enabled (true)}
+    target (bixby-mobile-ko-KR) //Korean(South Korea)
+    target (bixby-mobile-en-US){enabled (false)} 
   }
+  
+  store-sections{
+    section (TravelAndTransportation)
+    section (Local)
+  }
+  
   runtime-flags {
     concepts-inherit-super-type-features
     modern-prompt-rejection

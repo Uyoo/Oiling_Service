@@ -1,3 +1,8 @@
+train (t-919pvsos2sadvixpbwd3erfbp) {
+  utterance ("[g:Result_moneyLiter] (5만4000)[v:InputValue](원)[v:InputUnit:won]으로 (휘발유)[v:Fuel:gasoline] 몇 리터 넣을 수 있어")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561372098180)
+}
 train (t-9hodav8hygxyth4wlmihwog21) {
   utterance ("[g:Result_All] (K3)[v:CarName]로 (42.195)[v:InputValue](킬로미터)[v:InputUnit:distance] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)

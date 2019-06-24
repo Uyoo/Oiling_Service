@@ -1,0 +1,5 @@
+train (t-twrufqg2d8bdn2lc75fk91vry) {
+  utterance ("[g:Result_moneyLiter] (4만)[v:InputValue](원)[v:InputUnit:won]으로 (엘피지)[v:Fuel:LPi] 얼마나 넣을수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561371464293)
+}
