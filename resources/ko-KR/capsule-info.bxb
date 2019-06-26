@@ -1,11 +1,11 @@
 capsule-info {
   display-name(오일링서비스)
   developer-name(Hwasim)
-  icon-asset(../assets/images/oilingService_Logo.png)
+  icon-asset(/images/oilingService_Logo.png)
   description (주유서비스: 각 연료(휘발유, 경유, LPG)에 대한 현재 유가 정보를 제공한다. 주유비, 주유량, 주행거리를 고려해 각 차종별 맞춤 정보를 제공한다.)
   website-url (https://github.com/Uyoo/Oiling_Service)
   //termsUrl (https://example.com/terms-of-use/)
-  privacy-policy-url(../assets/privacy_policy/privacy_policy.html)
+  privacy-policy-url(https://uyoo.github.io/Oiling_Service_PrivacyPolicyUrl/)
   search-keywords{//마켓플레이스에서 사용자가 캡슐을 검색할때 사용하는 키워드
     keyword(기름)
     keyword(오일)
