@@ -2,31 +2,22 @@ capsule-info {
   display-name(오일링서비스)
   developer-name(Hwasim)
   icon-asset(../assets/images/oilingService_Logo.png)
-  description ("주유서비스: 각 연료(휘발유, 경유, LPG)에 대한 현재 유가 정보를 제공한다. 주유비, 주유량, 주행거리를 고려해 각 차종별 맞춤 정보를 제공한다.")
+  description (주유서비스: 각 연료(휘발유, 경유, LPG)에 대한 현재 유가 정보를 제공한다. 주유비, 주유량, 주행거리를 고려해 각 차종별 맞춤 정보를 제공한다.)
   website-url (https://github.com/Uyoo/Oiling_Service)
   //termsUrl (https://example.com/terms-of-use/)
   privacy-policy-url(../assets/privacy_policy/privacy_policy.html)
   search-keywords{//마켓플레이스에서 사용자가 캡슐을 검색할때 사용하는 키워드
-    keyword("기름")
-    keyword("오일")
-    keyword("기름값")
-    keyword("휘발유")
-    keyword("경유")
-    keyword("LPG")
-    keyword("렌트카")
-    keyword("렌트카 기름값 계산")
+    keyword(기름)
+    keyword(오일)
+    keyword(기름값)
+    keyword(휘발유)
+    keyword(경유)
+    keyword(LPG)
+    keyword(렌트카)
+    keyword(렌트카 기름값 계산)
   }
-  dispatch-name("오일링서비스") // 사용자가 부르는 캡슐이름
+  dispatch-name (오일링서비스)
+  dispatch-aliases {
+    alias (오일링 서비스)
+  }
 }
-
-// description {
-//   displayName (Oiling_service)
-//   companyName (Hwasim)
-//   iconUrl (/assets/images/oilingService_Logo.png) 
-//   
-//   description ("종합 주유정보 제공 서비스")
-//   websiteUrl (https://example.com/)
-//   termsUrl (https://example.com/terms-of-use/)
-// }
-// 
-// 
