@@ -3,6 +3,11 @@ train (t-x18ezaojnikhor5d0cmeqikoi) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561345415209)
 }
+train (t-xdg7ber1hvq6zg9oo16d2hxe5) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (휘발유)[v:hwasim.oiling_service.Fuel:gasoline] (2500)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 몇 리터 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561511687032)
+}
 train (t-xjcagzn32raxm9r2jae8ffk0t) {
   utterance ("[g:CurrentFuelPrice] 현재 (LPG)[v:Fuel:LPi] 얼마야?")
   plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)

@@ -18,3 +18,8 @@ train (t-uv31g64a3lgmsxampk3k0jyt8) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561343371650)
 }
+train (t-uzdiq9fg2ry87csno4jmuuzm7) {
+  utterance ("[g:Result_moneyLiter] (만)[v:InputValue](원)[v:InputUnit:won]으로 (휘발유)[v:Fuel:gasoline] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561510774001)
+}

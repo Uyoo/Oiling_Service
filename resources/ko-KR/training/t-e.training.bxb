@@ -1,3 +1,8 @@
+train (t-ecnb4ewmw27lvpgor7d12pqda) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (2만 4000)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (경유)[v:hwasim.oiling_service.Fuel:diesel] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561510439651)
+}
 train (t-ega1a7obxzoklmr8olauh2v0o) {
   utterance ("[g:Result_All] (엑센트)[v:CarName]로 (불국사)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)

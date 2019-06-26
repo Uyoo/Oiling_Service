@@ -3,15 +3,35 @@ train (t-w4fhb85jdykfzxb9sd1kz9qxp) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561359201258)
 }
+train (t-wemkw9o6ueeoo2fjwzr5q08bp) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (9만)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (휘발유)[v:hwasim.oiling_service.Fuel:gasoline] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561510812593)
+}
 train (t-why0954crko2vejew9bnsqrlg) {
   utterance ("[g:CurrentFuelPrice] (LPG)[v:Fuel:LPi] 얼마야?")
   plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
   last-modified (1561359689042)
 }
+train (t-wlvg6o63r0w5d68uofcv3mpjz) {
+  utterance ("[g:Result_moneyLiter] (7400)[v:InputValue](원)[v:InputUnit:won]으로 (LPG)[v:Fuel:LPi] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561509806395)
+}
+train (t-wm5uc5frg5z2wt8lln5tghqcz) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (휘발유)[v:hwasim.oiling_service.Fuel:gasoline] (4만 8000)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]에 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561511604176)
+}
 train (t-wp7wjyqkt8vmkcu7b4gac5ljb) {
   utterance ("[g:Result_All] (싼타페)[v:CarName]로 (37)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561296925885)
+}
+train (t-wprm0feihbd2vcug86k19jkn1) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (10만 2000)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (휘발유)[v:hwasim.oiling_service.Fuel:gasoline] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561510734721)
 }
 train (t-wpx595kagnbnrlanio6fekv1h) {
   utterance ("[g:Result_All] (K7)[v:CarName]타고 (시청역)[v:StartPlace](에서)[v:InputUnit:place] (합정역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]야?")

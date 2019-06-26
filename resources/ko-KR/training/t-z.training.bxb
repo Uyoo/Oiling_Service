@@ -3,6 +3,16 @@ train (t-z2msb1n4xz78sai7zuggdtso7) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561265159918)
 }
+train (t-zfhomcfatkgynzb1wueyyp1ep) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (2만)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (엘피지)[v:hwasim.oiling_service.Fuel:LPi] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561509311340)
+}
+train (t-znkquuq2it67kkbo2itqi6e6p) {
+  utterance ("[g:Result_moneyLiter] (경유)[v:Fuel:diesel] (9만)[v:InputValue](원)[v:InputUnit:won]으로 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561511433729)
+}
 train (t-zp1jfrjxzjgz9w8fvs1nbgnwe) {
   utterance ("[g:Result_All] (K3)[v:CarName]로 (50)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (킬로미터)[v:Question:distance_what] 갈 수 있어?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)

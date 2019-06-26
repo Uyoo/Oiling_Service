@@ -13,10 +13,20 @@ train (t-29pxxxw029ucnlsb24xo710z7) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561297198609)
 }
+train (t-29valhmrsnsazxs07yj48h78y) {
+  utterance ("[g:Result_moneyLiter] (1만 6000)[v:InputValue](원)[v:InputUnit:won]으로 (경유)[v:Fuel:diesel] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561510519978)
+}
 train (t-2j2atyreo769z3atn4veehmse) {
   utterance ("[g:Result_All] (모닝)[v:CarName]에 (15)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561346479819)
+}
+train (t-2ltlnhb2dwy1enjgpge2fl67t) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (천)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (경유)[v:hwasim.oiling_service.Fuel:diesel] 몇 리터 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561510243283)
 }
 train (t-2mbm27p55i56g62payuq9qc2l) {
   utterance ("[g:Result_All] (쏘렌토)[v:CarName]로 (여기서)[v:InputUnit:place] (지리산입구)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")

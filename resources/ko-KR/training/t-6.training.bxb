@@ -18,10 +18,20 @@ train (t-69yl3ruhv8x8khlsuid4u3fnw) {
   plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
   last-modified (1561297115158)
 }
+train (t-6a4vr6ezyt1iq894tnxky4jf4) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (만)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (LPG)[v:hwasim.oiling_service.Fuel:LPi] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561509763987)
+}
 train (t-6grjgf64kw673v10usaltl0sq) {
   utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (1만 4000)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (경유)[v:hwasim.oiling_service.Fuel:diesel] 몇 리터 넣을 수 있어?")
   plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
   last-modified (1561372152239)
+}
+train (t-6i8gyibb8gc45xxanxuqpogc9) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (1200)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (엘피지)[v:hwasim.oiling_service.Fuel:LPi] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561509640275)
 }
 train (t-6u7kfs6fgxcnt6o4fode76d7e) {
   utterance ("[g:Result_moneyLiter] (8000)[v:InputValue](원)[v:InputUnit:won]으로 (휘발유)[v:Fuel:gasoline] 얼마나 넣을 수 있어?")

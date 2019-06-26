@@ -8,6 +8,16 @@ train (t-5mx2yv2yxywracdmfz7xy0tlo) {
   plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
   last-modified (1561372402838)
 }
+train (t-5qgbnabov46k1d9lkh0rzyeuj) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (LPG)[v:hwasim.oiling_service.Fuel:LPi] (3만 4000)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 몇 리터 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561511727273)
+}
+train (t-5sxmtx60og2a4i9kq2vb1jqap) {
+  utterance ("[g:Result_moneyLiter] (만)[v:InputValue](원)[v:InputUnit:won]으로 (엘피지)[v:Fuel:LPi] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561509235356)
+}
 train (t-5xf2gswzeakmrrkm1d75dc260) {
   utterance ("[g:Result_All] (스포티지)[v:CarName]로 (강릉시청)[v:StartPlace](에서)[v:InputUnit:place] (충주시청)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)

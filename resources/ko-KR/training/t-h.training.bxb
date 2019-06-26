@@ -3,10 +3,20 @@ train (t-h0lldnbsgrctkx161mngrp55x) {
   plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
   last-modified (1561359552547)
 }
+train (t-h203a2t34fpmlyhkyq7tlmkts) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (LPG)[v:hwasim.oiling_service.Fuel:LPi] (천)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 몇 리터 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561511766000)
+}
 train (t-h5kku2vu0de230cdq8g73lp3o) {
   utterance ("[g:CurrentFuelPrice] 현재 (LPG)[v:Fuel:LPi] 가격 얼마야?")
   plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
   last-modified (1561359689762)
+}
+train (t-hebl6p915sonvuy8xk3s6udw9) {
+  utterance ("[g:Result_moneyLiter] (천)[v:InputValue](원)[v:InputUnit:won]으로 (엘피지)[v:Fuel:LPi] 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561509523580)
 }
 train (t-hio7h45wt5tvzq520ii9jaotw) {
   utterance ("[g:Result_All] (k5)[v:CarName]로 (120)[v:InputValue](킬로미터)[v:InputUnit:distance] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
@@ -27,6 +37,11 @@ train (t-hpjkpigihzhcqwgqw5p6mj9lm) {
   utterance ("[g:Result_All] (k5)[v:CarName]타고 (여기서)[v:InputUnit:place] (충정로역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
   plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
   last-modified (1561349134707)
+}
+train (t-ht99ys2v9fnc2259p0d51u5bk) {
+  utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (LPG)[v:hwasim.oiling_service.Fuel:LPi] (만)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 얼마나 넣을 수 있어?")
+  plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
+  last-modified (1561511749415)
 }
 train (t-hvhak4ydnzz092cwijwjbvru3) {
   utterance ("[g:Result_All] (아반떼)[v:CarName]로 (문정래미안아파트)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
