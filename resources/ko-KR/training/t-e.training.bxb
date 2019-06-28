@@ -8,6 +8,11 @@ train (t-ega1a7obxzoklmr8olauh2v0o) {
   plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
   last-modified (1561297346078)
 }
+train (t-eizlx91ui0fpx4gyduv3xsnq4) {
+  utterance ("[g:Result_All] (스포티지)[v:CarName]로 여기서 (천안역)[v:EndPlace] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (dYy9CsJAEIRHjb6FP4V13kHEwiJBBeuwxCUu7F3k9k5f37MQm3OHgYHvY7HA5v4iE1ePouKHzjg8pef6wpY0djtVbMuGY7IUuBFlGhjLsrWn0JJjrMr44G8npZ6xLvOjf6R49RL/PTgntiijxxwTTDFDlRfy/uZ3Ve7HyPwN)
+  last-modified (1561698697368)
+}
 train (t-ekaa4095bs8786j85ovf9ff3r) {
   utterance ("[g:CurrentFuelPrice] 현재 (엘피지)[v:Fuel:LPi] 기름값 얼마야?")
   plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
@@ -18,8 +23,18 @@ train (t-en39x2og1rzhohtiv52y5y14n) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561348695318)
 }
+train (t-eniuehm9hpov8q33zrajpmr56) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (그랜저)[v:hwasim.oiling_service.CarName]로 (인천공항)[v:hwasim.oiling_service.EndPlace](까지)[v:hwasim.oiling_service.EndPlaceUnit] 가면 (얼마)[v:hwasim.oiling_service.Question:money_what]나와?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561698327730)
+}
 train (t-eq9q0kp6xbfiz1m0pgzeqooyi) {
   utterance ("[g:Result_All] (엑센트)[v:CarName]로 (15)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561296494216)
+}
+train (t-exev37bgft07ebiiwjnxuoig4) {
+  utterance ("[g:Result_All] (k5)[v:CarName] 타고 (명동역)[v:StartPlace](에서)[v:InputUnit:place] (이대역)[v:EndPlace] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (dY85DsJADEU/+ylYCurcASEKChCLqCMrWMGSZ4JmPHB9gihIMbEbf70nW8YMq8eboriiERVfl5HDSyouLhyTWrlRxTpvOKaYAh9EmWrGPG9tKRzJMRZ5vPP3k1LFWOb53j+T3bxY34Jz4mjS+L4/rkbBfiemGGCIEcaYtDPa9O9ufVnH+wA=)
+  last-modified (1561692708354)
 }

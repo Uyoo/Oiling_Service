@@ -3,6 +3,11 @@ train (t-dgobfjv4ovin2f9b4cv7zk6l7) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561297752916)
 }
+train (t-dhcodqp0s0b2yx92uq2lvqv2x) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (아반떼)[v:hwasim.oiling_service.CarName]로 (신촌역)[v:hwasim.oiling_service.EndPlace](까지)[v:hwasim.oiling_service.EndPlaceUnit] 가면 (얼마)[v:hwasim.oiling_service.Question:money_what]야?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561698074116)
+}
 train (t-diqwtjew9jjhaya54wttd9pcr) {
   utterance ("[g:Result_moneyLiter] (경유)[v:Fuel:diesel] (천)[v:InputValue](원)[v:InputUnit:won]으로 몇 리터 넣을 수 있어?")
   plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
@@ -12,4 +17,9 @@ train (t-dsvrvf9wvpe4j3j1xmwawz2le) {
   utterance ("[g:Result_All] (쏘나타)[v:CarName]로 (여기서)[v:InputUnit:place] (대구시청)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
   plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
   last-modified (1561345259414)
+}
+train (t-dzkanmmlv33wrybjdm28bw4kr) {
+  utterance ("[g:Result_All] (그랜저)[v:CarName]로 (계산역)[v:StartPlace](에서)[v:InputUnit:place] (작전역)[v:EndPlace] 가면 (얼마)[v:Question:money_what]나와?")
+  plan (dY85DsJADEU/+ylYCurcASEKChCLqCMrWMGSZ4JmPHB9gihIMbEbf70nW8YMq8eboriiERVfl5HDSyouLhyTWrlRxTpvOKaYAh9EmWrGPG9tKRzJMRZ5vPP3k1LFWOb53j+T3bxY34Jz4mjS+L4/rkbBfiemGGCIEcaYtDPa9O9ufVnH+wA=)
+  last-modified (1561698478457)
 }

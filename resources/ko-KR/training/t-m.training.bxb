@@ -1,12 +1,27 @@
+train (t-m5g5wirtdwiymlpaylicon03j) {
+  utterance ("[g:Result_All] (k5)[v:CarName] 타고 (명동역)[v:StartPlace](에서)[v:InputUnit:place] (이대역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561690326670)
+}
 train (t-ma59dew5s8vx0pdgxvlsaplmt) {
   utterance ("[g:Result_All] (K7)[v:CarName]타고 (군자역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
   last-modified (1561342846162)
 }
+train (t-mdv48d0qkw7d011hm9asphsb8) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (싼타페)[v:hwasim.oiling_service.CarName]로 (홍대입구역)[v:hwasim.oiling_service.StartPlace](에서)[v:hwasim.oiling_service.InputUnit:place] (신도림)[v:hwasim.oiling_service.EndPlace](까지)[v:hwasim.oiling_service.EndPlaceUnit] (얼마)[v:hwasim.oiling_service.Question:money_what]나 넣어야돼?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561684535296)
+}
 train (t-mkkz6xnou93ktebcjf7adekty) {
   utterance ("[g:Result_All] (K7)[v:CarName]으로 (여기서)[v:InputUnit:place] (천호역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
   plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)
   last-modified (1561342725442)
+}
+train (t-mu90fhmq503rwiwq6tuarrf76) {
+  utterance ("[g:Result_All] (소나타)[v:CarName]로 (문정역)[v:StartPlace](에서)[v:InputUnit:place] (세종대학교)[v:EndPlace](까지)[v:EndPlaceUnit] (얼마)[v:Question:money_what]나 넣어야돼?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561684178329)
 }
 train (t-mxkkn8np5hcj155xpoqw5u3kj) {
   utterance ("[g:Result_All] (싼타페)[v:CarName]에 (5만 3200)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")

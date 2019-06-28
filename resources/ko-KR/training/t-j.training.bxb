@@ -13,6 +13,16 @@ train (t-jkbgmzj4910jdcn7g6ul7keka) {
   plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
   last-modified (1561372476156)
 }
+train (t-jnnkeaw2sez278aqvo76tbk3h) {
+  utterance ("[g:Result_All] (아반떼)[v:CarName] 타고 여기서 (롯데월드)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]야?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561697917515)
+}
+train (t-jo2kc6t764p5q9ygt7sgyt0l1) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (k7)[v:hwasim.oiling_service.CarName]으로 (수내역)[v:hwasim.oiling_service.EndPlace](까지)[v:hwasim.oiling_service.EndPlaceUnit] 가면 (얼마)[v:hwasim.oiling_service.Question:money_what]야?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561698194561)
+}
 train (t-jtwy7o50d9s03gvlnr3hjenaj) {
   utterance ("[g:Result_All] (쏘렌토)[v:CarName]로 (37)[v:InputValue](키로)[v:InputUnit:distance] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)

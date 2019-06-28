@@ -1,3 +1,8 @@
+train (t-qk24w5c1vcyy30bmrea3xsyak) {
+  utterance ("[g:Result_All] (k7)[v:CarName]타고 (롯데월드)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]야?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561689190952)
+}
 train (t-qkaxlv9q1lyyrofab7qhq8giw) {
   utterance ("[g:Result_All] (K7)[v:CarName]에 (천)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (킬로미터)[v:Question:distance_what] 갈 수 있어?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
@@ -22,6 +27,11 @@ train (t-qp5zs7mmcs809ll4pst2kgvo7) {
   utterance ("[g:Result_All] (그랜저)[v:CarName] (5만)[v:InputValue](원)[v:InputUnit:won]이면 (몇 킬로미터)[v:Question:distance_what] 갈 수 있어")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561365495486)
+}
+train (t-qrnjvx9qvfbwizyxcr7u1vx8a) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (레이)[v:hwasim.oiling_service.CarName] 타고 (서울대입구역)[v:hwasim.oiling_service.StartPlace](에서)[v:hwasim.oiling_service.InputUnit:place] (남태령역)[v:hwasim.oiling_service.EndPlace](까지)[v:hwasim.oiling_service.EndPlaceUnit] 가면 (얼마)[v:hwasim.oiling_service.Question:money_what]야?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561689844455)
 }
 train (t-qv98ksrhp3ypbdumun2i2fnn8) {
   utterance ("[g:Result_All] (k7)[v:CarName]에 (62)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (킬로미터)[v:Question:distance_what] 갈 수 있어?")

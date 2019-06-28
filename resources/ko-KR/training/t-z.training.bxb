@@ -3,6 +3,11 @@ train (t-z2msb1n4xz78sai7zuggdtso7) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561265159918)
 }
+train (t-zcm40thv1ebahq5avw4i3xr63) {
+  utterance ("[g:Result_All] (아반떼)[v:CarName] 타고 (서울역)[v:EndPlace] 가면 (얼마)[v:Question:money_what]야?")
+  plan (dYy9CsJAEIRHjb6FP4V13kHEwiJBBeuwxCUu7F3k9k5f37MQm3OHgYHvY7HA5v4iE1ePouKHzjg8pef6wpY0djtVbMuGY7IUuBFlGhjLsrWn0JJjrMr44G8npZ6xLvOjf6R49RL/PTgntiijxxwTTDFDlRfy/uZ3Ve7HyPwN)
+  last-modified (1561698005497)
+}
 train (t-zfhomcfatkgynzb1wueyyp1ep) {
   utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (2만)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (엘피지)[v:hwasim.oiling_service.Fuel:LPi] 얼마나 넣을 수 있어?")
   plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)

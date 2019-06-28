@@ -3,10 +3,20 @@ train (t-k06mauxf62yospjx726v9hxd0) {
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561344205705)
 }
+train (t-kjf89qx7u740n4o8vjananktj) {
+  utterance ("[g:Result_All] (소나타)[v:CarName]로 (건국대학교)[v:StartPlace](에서)[v:InputUnit:place] (서현역)[v:EndPlace](까지)[v:EndPlaceUnit] (얼마)[v:Question:money_what]나 넣어야 돼?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561684110841)
+}
 train (t-kk1nay6by6925ywzwfol0mnjb) {
   utterance ("[g:Result_All] (k7)[v:CarName]으로 (132)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561342070458)
+}
+train (t-ku0w76b369w8pe8gu5ccktpbe) {
+  utterance ("[g:Result_All] (스파크)[v:CarName]로 여기서 (낙성대)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야 돼")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561708816591)
 }
 train (t-ku67t1a69p3zn7mh0x9f1q8tf) {
   utterance ("[g:Result_All] (엑센트)[v:CarName]로 (37)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")

@@ -89,11 +89,17 @@ function getDatas(carDatas, name){
     if(name == "소나타"){
       name = "쏘나타"
     }
-    if(name == "소렌토"){
+    if(name == "소렌토"|| name == "쏘랜토"|| name == "소랜토"){
       name = "쏘렌토"
     }
-    if(name == "그랜져"){
+    if(name == "산타페" || name == "싼타패"|| name == "산타페"){
+      name = "싼타페"
+    }
+    if(name == "그랜져"|| name == "그렌저"|| name == "그렌져"){
       name = "그랜저"
+    }
+    if(name == "액센트"|| name == "액샌트"|| name == "엑샌트"){
+      name = "엑센트"
     }
     if(carDatas[i].carName == name.toLowerCase()){
       return [carDatas[i].represent, carDatas[i].modelYear, name]
@@ -271,7 +277,7 @@ module.exports.function = function measureMileage (carName, inputValue, inputUni
                                                     startPlace, startPlaceMyPos, endPlace, endPlaceUnit) {
   let console = require('console')  
   let result = ''
-  
+  console.log(startPlace, endPlace)
   let input_unit = String(inputUnit)
   switch (input_unit) {    
     case 'won':
@@ -293,66 +299,29 @@ module.exports.function = function measureMileage (carName, inputValue, inputUni
       }
       break;
       
-    case 'place':
+    case 'place':      
       let distance_value 
       let latlon_s
-      let latlon_e
+      let latlon_e = getLatLon(endPlace)
+         
+      if(startPlace != undefined){ //출발지가 있는 경우
+        latlon_s = getLatLon(startPlace)
+      }else{//목적지만 있는 경우
+        //위도 경도 구하기
+        latlon_s = [startPlaceMyPos.latitude, startPlaceMyPos.longitude] 
+      } 
+      //거리구하기
+      distance_value = getDistance(latlon_s, latlon_e)
+      distance_value = Math.floor(distance_value / 1000)
       
-      //목적지 및 목저지유닛이 존재하는 경우
-      if(endPlace != undefined && endPlaceUnit != undefined){      
-        
-        //출발지 키워드가 존재하는 경우
-        if(startPlace != undefined){
-          console.log('start_place: ', startPlace)
-          console.log('end_place: ', endPlace)
-          
-          //위도 경도 구하기
-          latlon_s = getLatLon(startPlace)
-          latlon_e = getLatLon(endPlace)
-          distance_value = getDistance(latlon_s, latlon_e)
-          distance_value = Math.floor(distance_value / 1000)
-          console.log(distance_value)
-          
-          //기름값이 얼마인지      
-          if(question == 'money_what'){
-            result = distance_moneyWhat(carName, distance_value)
-          }
-          //몇 리터 채워야 하는지
-          else if(question == 'liter_what'){
-            result = distance_literWhat(carName, distance_value)
-          }      
-          
-        } 
-        
-        //출발지 키워드가 존재하지 않은 경우 ex.여기서, x
-        else{          
-          //위도 경도 구하기
-          latlon_s = [startPlaceMyPos.latitude, startPlaceMyPos.longitude] 
-          latlon_e = getLatLon(endPlace)          
-          distance_value = getDistance(latlon_s, latlon_e)
-          distance_value = Math.floor(distance_value / 1000)
-          
-          console.log(distance_value)
-          
-          //기름값이 얼마인지      
-          if(question == 'money_what'){
-            result = distance_moneyWhat(carName, distance_value)
-          }
-          //몇 리터 채워야 하는지
-          else if(question == 'liter_what'){
-            result = distance_literWhat(carName, distance_value)
-          }      
-        } 
-      }
-      
-      else {
-        result = '목적지를 입력해주세요'
-      }
-      
+      if(question == 'money_what'){ //얼마어치 채워야 하는지
+        result = distance_moneyWhat(carName, distance_value)
+      }else if(question == 'liter_what'){ //몇 리터 채워야 하는지
+        result = distance_literWhat(carName, distance_value)
+      } 
       break;
-      
-    default:      
-      console.log('Sorry')
+    default: 
+      consolo.log("Sorry") 
   }
     
   return result

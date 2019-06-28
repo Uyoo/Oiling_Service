@@ -8,6 +8,11 @@ train (t-nb9aztut5094xt6s6srpypmme) {
   plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
   last-modified (1561346696060)
 }
+train (t-nfwinpvr5q39y81aui5w0lkas) {
+  utterance ("[g:Result_All] (아반떼)[v:CarName] 타고 (롯데월드)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]야?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561693285937)
+}
 train (t-nnlwj9moo9y4v7pko932peio7) {
   utterance ("[g:CurrentFuelPrice] (LPG)[v:Fuel:LPi] 가격 얼마야?")
   plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)

@@ -13,6 +13,11 @@ train (t-3gnd0r8dhky3rmixbu5nad56t) {
   plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
   last-modified (1561511349959)
 }
+train (t-3socwy64xgstwufvsubvts0q8) {
+  utterance ("[g:Result_All] (엑센트)[v:CarName] 타고 여기서 (신도림역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561706745700)
+}
 train (t-3tmqoz2t80sarbng8hca5wpev) {
   utterance ("[g:Result_All] (엑센트)[v:CarName]로 (신촌역)[v:StartPlace](에서)[v:InputUnit:place] (불국사)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]나와?")
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)

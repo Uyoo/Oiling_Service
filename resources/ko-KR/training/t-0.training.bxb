@@ -43,6 +43,11 @@ train (t-0lmip84oymqlwz5zczwfgs7zi) {
   plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
   last-modified (1561297148651)
 }
+train (t-0od2epms80sn92lm8utxtfdp8) {
+  utterance ("[g:Result_All] (싼타페)[v:CarName]로 여기서 (주안역)[v:EndPlace] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
+  plan (dYy9CsJAEIRHjb6FP4V13kHEwiJBBeuwxCUu7F3k9k5f37MQm3OHgYHvY7HA5v4iE1ePouKHzjg8pef6wpY0djtVbMuGY7IUuBFlGhjLsrWn0JJjrMr44G8npZ6xLvOjf6R49RL/PTgntiijxxwTTDFDlRfy/uZ3Ve7HyPwN)
+  last-modified (1561698611752)
+}
 train (t-0yhym5bnaemr9u1o8olqu8ahm) {
   utterance ("[g:Result_All] (k5)[v:CarName]에 (35)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (킬로미터)[v:Question:distance_what] 갈 수 있어?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)

@@ -8,6 +8,11 @@ train (t-1jb29lj2qqiqrmfjmk4rg2nun) {
   plan (Y2BmUMsoTyzOzNXLz8zJzEuPL04tKstMTtVzLi0qSs0rcStNzQkoAgowyGNXh1AghVsBAxMDIxAzAElGBhBggmAA)
   last-modified (1561359453394)
 }
+train (t-1oj0x2bq6khikev27dxs6725m) {
+  utterance ("[g:Result_All] (k3)[v:CarName] 타고 (오류동역)[v:StartPlace](에서)[v:InputUnit:place] (용산역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]야?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561689800743)
+}
 train (t-1yqit67kg4vk2l2miaq870tbl) {
   utterance ("[g:Result_All] (스포티지)[v:CarName]로 (여기서)[v:InputUnit:place] (설악산입구)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)

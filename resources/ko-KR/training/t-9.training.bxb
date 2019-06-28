@@ -3,10 +3,20 @@ train (t-919pvsos2sadvixpbwd3erfbp) {
   plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
   last-modified (1561372098180)
 }
+train (t-9d8zvkaumsukwvkh0nt7tbxj1) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (싼타페)[v:hwasim.oiling_service.CarName]로 (김포공항)[v:hwasim.oiling_service.StartPlace](에서)[v:hwasim.oiling_service.InputUnit:place] (신촌역)[v:hwasim.oiling_service.EndPlace](까지)[v:hwasim.oiling_service.EndPlaceUnit] 가려면 (몇 리터)[v:hwasim.oiling_service.Question:liter_what] 넣어야해?")
+  plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
+  last-modified (1561698274170)
+}
 train (t-9hodav8hygxyth4wlmihwog21) {
   utterance ("[g:Result_All] (K3)[v:CarName]로 (42.195)[v:InputValue](킬로미터)[v:InputUnit:distance] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
   plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
   last-modified (1561343485226)
+}
+train (t-9oygru3ec4ks43x09gixujoel) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (스파크)[v:hwasim.oiling_service.CarName]로 (발산역)[v:hwasim.oiling_service.EndPlace](까지)[v:hwasim.oiling_service.EndPlaceUnit] 가면 (얼마)[v:hwasim.oiling_service.Question:money_what]나와?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561698518545)
 }
 train (t-9qji8l0wfukjtz4ryqdoxcwgb) {
   utterance ("[g:Result_All] (k5)[v:CarName]로 (175)[v:InputValue](키로)[v:InputUnit:distance] 가면 (얼마)[v:Question:money_what]나와?")

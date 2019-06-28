@@ -3,6 +3,11 @@ train (t-w4fhb85jdykfzxb9sd1kz9qxp) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561359201258)
 }
+train (t-wd3gixtyhqfobrhh1qs5sm0hm) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (싼타페)[v:hwasim.oiling_service.CarName] 타고 (김포공항)[v:hwasim.oiling_service.EndPlace](까지)[v:hwasim.oiling_service.EndPlaceUnit] 가려면 몇 (리터)[v:hwasim.oiling_service.Question:liter_what] 넣어야해?")
+  plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)
+  last-modified (1561698298425)
+}
 train (t-wemkw9o6ueeoo2fjwzr5q08bp) {
   utterance ("[g:hwasim.oiling_service.Result_moneyLiter] (9만)[v:hwasim.oiling_service.InputValue](원)[v:hwasim.oiling_service.InputUnit:won]으로 (휘발유)[v:hwasim.oiling_service.Fuel:gasoline] 얼마나 넣을 수 있어?")
   plan (Y2BlUM8oTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJz83PS630ySxJLWJQxK4QrCI+B6xECrsSt9LUHAZ57HKeeQWlJaF5mSUMCngUhCXmlKYysDAwMjAxMANpBiALAmEAJAaVAwA=)
@@ -37,6 +42,11 @@ train (t-wpx595kagnbnrlanio6fekv1h) {
   utterance ("[g:Result_All] (K7)[v:CarName]타고 (시청역)[v:StartPlace](에서)[v:InputUnit:place] (합정역)[v:EndPlace](까지)[v:EndPlaceUnit] 가면 (얼마)[v:Question:money_what]야?")
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561343150833)
+}
+train (t-wqft6o4smdr4romsr71cc7lo6) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (쏘렌토)[v:hwasim.oiling_service.CarName]로 여기서 (강남구청역)[v:hwasim.oiling_service.EndPlace] 가려면 몇 (리터)[v:hwasim.oiling_service.Question:liter_what] 넣어야돼?")
+  plan (dYy9CsJAEIRHjb6FP4V13kHEwiJBBeuwxCUu7F3k9k5f37MQm3OHgYHvY7HA5v4iE1ePouKHzjg8pef6wpY0djtVbMuGY7IUuBFlGhjLsrWn0JJjrMr44G8npZ6xLvOjf6R49RL/PTgntiijxxwTTDFDlRfy/uZ3Ve7HyPwN)
+  last-modified (1561698723721)
 }
 train (t-wrdpyzholdtahzsggsfp3kj97) {
   utterance ("[g:Result_All] (쏘렌토)[v:CarName]로 (광안리역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 넣어야돼?")
