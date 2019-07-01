@@ -18,6 +18,11 @@ train (t-8bj0lv7049q5l2f24p0m4vsub) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561343879689)
 }
+train (t-8d3m0ujb1zpdx6dg9bgrkrbb0) {
+  utterance ("[g:hwasim.oiling_service.Result_All] (아반떼)[v:hwasim.oiling_service.CarName]에 (9000)[v:hwasim.oiling_service.InputValue](원어치)[v:hwasim.oiling_service.InputUnit:won] 넣으면 몇 (키로)[v:hwasim.oiling_service.Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561965093560)
+}
 train (t-8iy5kr35hjjwk3ivns7s19p4z) {
   utterance ("[g:Result_All] (k7)[v:CarName]타고 (여기서)[v:InputUnit:place] (잠실역)[v:EndPlace](까지)[v:EndPlaceUnit] 가려면 몇 (리터)[v:Question:liter_what] 필요해?")
   plan (fY07CgJBEETL/yn8IMZ7BxEDA0UF46VZm7WhZ1amZ/T6riZuMNqVVPEeNCZY3J5k4opGVHxdGoeHVFyc2ZLGcq2KVd5wTJYC70WZasY0b20oHMgxZnm89dejUsVY/ucXLxHzvLPz9xQ/wo8np8QWpfEYo4c+Bhhi1Ha065vuvVnHewE=)

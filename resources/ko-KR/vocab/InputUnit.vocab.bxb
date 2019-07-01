@@ -1,6 +1,8 @@
 vocab(InputUnit){
  "won"{
-    "원"    
+    "원"
+    "원어치"
+    "원 어치"
   }
   "liter"{
     "리터"    
