@@ -1,6 +1,6 @@
 capsule {
   id (hwasim.oiling_service)
-  version (3.2.1)
+  version (3.2.3)
   format (3)
   targets {
     target (bixby-mobile-ko-KR) //Korean(South Korea)

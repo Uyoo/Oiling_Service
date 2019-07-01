@@ -3,6 +3,11 @@ train (t-w4fhb85jdykfzxb9sd1kz9qxp) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561359201258)
 }
+train (t-wcg9b3ety3lrzfo3w2xf4ur19) {
+  utterance ("[g:Result_All] (아반떼)[v:CarName]에 (2만 5000)[v:InputValue](원)[v:InputUnit:won] 넣으면 몇 (킬로미터)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561960969895)
+}
 train (t-wd3gixtyhqfobrhh1qs5sm0hm) {
   utterance ("[g:hwasim.oiling_service.Result_All] (싼타페)[v:hwasim.oiling_service.CarName] 타고 (김포공항)[v:hwasim.oiling_service.EndPlace](까지)[v:hwasim.oiling_service.EndPlaceUnit] 가려면 몇 (리터)[v:hwasim.oiling_service.Question:liter_what] 넣어야해?")
   plan (fc3LCsJADAXQ66P6FT4Q1/0HkS5cKCq4LqGGGshMyzz09x10oYvRhEDCPRBMsbw9yIspO1Gxbe3Z3aXh8sw+aqg3qljnhWHy0fFelKllzPJqS+5AhjHPx5W9HpUaxup/frESsMibne1jeIEfT06RfZDOYoIBhhhhjCLtSNenv6tI83ZJPQE=)

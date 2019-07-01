@@ -3,6 +3,11 @@ train (t-z2msb1n4xz78sai7zuggdtso7) {
   plan (fY/JCsJQDEWvsz/hgLjuP4i4cKE44LqEGmog71XeoL9v1Y2FV5PV5RxILsaY357kxWSVqNgy9+weUnB2Yh815CtVLNOGYfLR8U6UqWRM0taa3J4MY5rGG3s9KBWMxX9+sRIwSztbe4/hI7QcOUb2QSrb1vUcyIXvGyN00EUPfQwwrBPq/LvNefOG/QI=)
   last-modified (1561265159918)
 }
+train (t-z4l8w33z73c8h1gveb2c3r4su) {
+  utterance ("[g:Result_All] (아반떼)[v:CarName]에 (15)[v:InputValue](리터)[v:InputUnit:liter] 넣으면 몇 (키로)[v:Question:distance_what] 갈 수 있어?")
+  plan (Y2BjUMgoTyzOzNXLz8zJzEuPL04tKstMTtULSi0uzSmJd8zJYVDBriI3NbG4tCjVNzMnNTE9lUEWuyrnxCK/xNxUBnns0p55BaUloXmZJbjcAVYQlphTmsogh11FYGlqcUlmfh4DKwMjAxMDMwMLkMUAZMMgAoDE4SoA)
+  last-modified (1561961091998)
+}
 train (t-zcm40thv1ebahq5avw4i3xr63) {
   utterance ("[g:Result_All] (아반떼)[v:CarName] 타고 (서울역)[v:EndPlace] 가면 (얼마)[v:Question:money_what]야?")
   plan (dYy9CsJAEIRHjb6FP4V13kHEwiJBBeuwxCUu7F3k9k5f37MQm3OHgYHvY7HA5v4iE1ePouKHzjg8pef6wpY0djtVbMuGY7IUuBFlGhjLsrWn0JJjrMr44G8npZ6xLvOjf6R49RL/PTgntiijxxwTTDFDlRfy/uZ3Ve7HyPwN)
