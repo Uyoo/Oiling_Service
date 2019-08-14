@@ -26,6 +26,10 @@ capsule {
       as (geo)
       version (9.17.18)
     }
+    import (viv.money) {
+      as (money)
+      version (2.18.9)
+    }
   }
   
   permissions{
