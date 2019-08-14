@@ -1,0 +1,3 @@
+structure (Cost) {
+  role-of (money.Price)
+}
