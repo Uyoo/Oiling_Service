@@ -1,6 +1,6 @@
 # Oiling_Service
 <img src="https://d2vmsfj099sbr1.cloudfront.net/newsroom_challenge_silver_team%20image_re.jpg" alt="Prunus" title="A Wild Cherry (Prunus avium) in flower"></br>
-[[인터뷰] 은상, 차종별 맞춤 주유 정보 '오일링서비스' 캡슐](https://bixby.developer.samsung.com/newsroom/ko-kr/%EC%9D%B8%ED%84%B0%EB%B7%B0-%EC%9D%80%EC%83%81-%EC%B0%A8%EC%A2%85%EB%B3%84-%EB%A7%9E%EC%B6%A4-%EC%A3%BC%EC%9C%A0-%EC%A0%95%EB%B3%B4-%EC%98%A4%EC%9D%BC%EB%A7%81%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%BA%A1%EC%8A%90)</br>
+[차종별 맞춤 주유 정보 '오일링서비스'의 발표 및 인터뷰 영상 보러가기](https://www.youtube.com/watch?v=o08yZfeC5KI)</br>
 
 []: optional
 
